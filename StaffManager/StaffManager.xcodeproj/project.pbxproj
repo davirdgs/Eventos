@@ -14,6 +14,8 @@
 		55DC016A1B4BF37D00E8E037 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DC01691B4BF37D00E8E037 /* Images.xcassets */; };
 		55DC016D1B4BF37D00E8E037 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DC016B1B4BF37D00E8E037 /* LaunchScreen.xib */; };
 		55DC01791B4BF37D00E8E037 /* StaffManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01781B4BF37D00E8E037 /* StaffManagerTests.swift */; };
+		55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */; };
+		55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01841B4C044400E8E037 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		55DC01721B4BF37D00E8E037 /* StaffManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DC01771B4BF37D00E8E037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55DC01781B4BF37D00E8E037 /* StaffManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffManagerTests.swift; sourceTree = "<group>"; };
+		55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newCustomSegue.swift; sourceTree = "<group>"; };
+		55DC01841B4C044400E8E037 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */,
 				55DC01641B4BF37D00E8E037 /* ViewController.swift */,
 				55DC01661B4BF37D00E8E037 /* Main.storyboard */,
+				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
+				55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */,
 				55DC01691B4BF37D00E8E037 /* Images.xcassets */,
 				55DC016B1B4BF37D00E8E037 /* LaunchScreen.xib */,
 				55DC01611B4BF37D00E8E037 /* StaffManager.xcdatamodeld */,
@@ -216,7 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DC01651B4BF37D00E8E037 /* ViewController.swift in Sources */,
+				55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */,
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
+				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
