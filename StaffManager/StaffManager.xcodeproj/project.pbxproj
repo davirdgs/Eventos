@@ -16,6 +16,9 @@
 		55DC01791B4BF37D00E8E037 /* StaffManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01781B4BF37D00E8E037 /* StaffManagerTests.swift */; };
 		55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */; };
 		55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01841B4C044400E8E037 /* LoginViewController.swift */; };
+		C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */; };
+		C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */; };
+		C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		55DC01781B4BF37D00E8E037 /* StaffManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffManagerTests.swift; sourceTree = "<group>"; };
 		55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newCustomSegue.swift; sourceTree = "<group>"; };
 		55DC01841B4C044400E8E037 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredenciamentoViewController.swift; sourceTree = "<group>"; };
+		C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Participante.swift; path = VO/Participante.swift; sourceTree = "<group>"; };
+		C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,9 @@
 		55DC015C1B4BF37D00E8E037 /* StaffManager */ = {
 			isa = PBXGroup;
 			children = (
+				C4D8AA521B4C4B3500C2E248 /* Persistence */,
 				55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */,
-				55DC01641B4BF37D00E8E037 /* ViewController.swift */,
+				C4D8AA531B4C4BA800C2E248 /* View */,
 				55DC01661B4BF37D00E8E037 /* Main.storyboard */,
 				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
 				55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */,
@@ -119,6 +126,32 @@
 				55DC01771B4BF37D00E8E037 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4D8AA4F1B4C4AAE00C2E248 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */,
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		C4D8AA521B4C4B3500C2E248 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */,
+				C4D8AA4F1B4C4AAE00C2E248 /* VO */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		C4D8AA531B4C4BA800C2E248 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */,
+				55DC01641B4BF37D00E8E037 /* ViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,11 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */,
 				55DC01651B4BF37D00E8E037 /* ViewController.swift in Sources */,
 				55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */,
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
+				C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
+				C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +457,7 @@
 				55DC017E1B4BF37D00E8E037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55DC017F1B4BF37D00E8E037 /* Build configuration list for PBXNativeTarget "StaffManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +466,7 @@
 				55DC01811B4BF37D00E8E037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
