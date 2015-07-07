@@ -62,28 +62,44 @@
             </objects>
             <point key="canvasLocation" x="78.5" y="701.5"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Collection Menu View Controller-->
         <scene sceneID="8yA-FE-GAa">
             <objects>
-                <collectionViewController id="4yN-hL-4JD" sceneMemberID="viewController">
+                <collectionViewController id="4yN-hL-4JD" customClass="CollectionMenuViewController" customModule="StaffManager" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nkz-Vb-Tgf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iBp-26-wPx">
-                            <size key="itemSize" width="124" height="50"/>
+                            <size key="itemSize" width="182" height="176"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCell" id="xcT-Al-FMe">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="menuCell" reuseIdentifier="menuCell" id="xcT-Al-FMe" customClass="CollectionMenuCell" customModule="StaffManager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="124" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="176"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cadastro1" translatesAutoresizingMaskIntoConstraints="NO" id="rju-Os-usL">
+                                            <rect key="frame" x="9" y="14" width="162" height="120"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2B-ZP-IN2">
+                                            <rect key="frame" x="70" y="144" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="pinImage" destination="rju-Os-usL" id="GLU-F4-WVX"/>
+                                    <outlet property="title" destination="P2B-ZP-IN2" id="6QW-Qa-r4U"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -116,4 +132,7 @@
             <point key="canvasLocation" x="580.5" y="701.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cadastro1" width="960" height="600"/>
+    </resources>
 </document>
