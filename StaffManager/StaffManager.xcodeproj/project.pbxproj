@@ -266,6 +266,7 @@
 				55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */,
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
+				C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */,
 				553A696D1B4C4BA1006C7BED /* CollectionMenuCell.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
 				C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */,
