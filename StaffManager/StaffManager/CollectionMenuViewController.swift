@@ -12,15 +12,12 @@ let reuseIdentifier = "menuCell"
 
 class CollectionMenuViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    
-    let sectionInserts = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+    let sectionInserts = UIEdgeInsets(top: 25.0, left: 10.0, bottom: 10.0, right: 10.0)
     let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
     }
 
@@ -39,27 +36,39 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 4
+        return self.titles.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        /*let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionMenuCell
-    
-        cell.title.text = "fdfr"
-        cell.pinImage.image = UIImage(named: "Cadastro1")
-        */
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionMenuCell
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        cell.title.text = self.titles[indexPath.row]
+        cell.pinImage.image = UIImage(named: "Cadastro1")
         
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: 170, height: 300)
+        return CGSize(width: 170, height: 170)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         return sectionInserts
+    }
+    
+    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "headerMenu", forIndexPath: indexPath) as! HeaderMenuView
+            return headerView
+        case UICollectionElementKindSectionFooter:
+            let footerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "footerMenu", forIndexPath: indexPath) as! FooterMenuView
+            return footerView
+        default:
+            assert(false, "Unexpected element kind")
+        }
+        
     }
 
 }
