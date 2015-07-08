@@ -26,7 +26,10 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func returnToMenu (segue: UIStoryboardSegue)
+    {
+        
+    }
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
@@ -70,5 +73,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
         }
         
     }
+    
+
 
 }
