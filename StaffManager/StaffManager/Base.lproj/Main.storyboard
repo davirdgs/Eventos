@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -202,8 +203,6 @@
         <!--Status Collection View Controller-->
         <scene sceneID="5f7-64-dHG">
             <objects>
-                <exit id="QyG-va-Cls" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Usf-8h-TE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="yxs-mF-8ng" customClass="StatusCollectionViewController" customModule="StaffManager" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="W4Y-Ib-eBM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -255,6 +254,8 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </collectionViewController>
+                <exit id="QyG-va-Cls" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usf-8h-TE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2270.5" y="1470.5"/>
         </scene>
@@ -359,6 +360,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z8X-6s-37H">
+                                <rect key="frame" x="0.0" y="0.0" width="611" height="44"/>
+                                <items>
+                                    <navigationItem title="Credenciamento" id="C1u-6w-wkv">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="VKU-jU-Iyr">
+                                            <connections>
+                                                <segue destination="i1j-ii-xVb" kind="unwind" unwindAction="returnToMenu:" id="U5t-ds-p2z"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZp-Qm-8rg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Ver Lista">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="168" y="582" width="59" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="FeQ-LO-pCe" kind="show" id="F7Y-yS-nNX"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-Cr-Lxp">
                                 <rect key="frame" x="199" y="215" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -439,34 +464,22 @@
                                     <action selector="SendClicked:" destination="FFE-57-XsW" eventType="touchUpInside" id="bh7-q3-dum"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZp-Qm-8rg">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Ver Lista">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="582" width="59" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="FeQ-LO-pCe" kind="show" id="F7Y-yS-nNX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="FZp-Qm-8rg"/>
                                 <exclude reference="a04-uH-0Og"/>
                                 <exclude reference="fZd-uh-Oxu"/>
                                 <exclude reference="8e4-Gf-QYS"/>
-                                <exclude reference="FZp-Qm-8rg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="FZp-Qm-8rg"/>
                                 <include reference="a04-uH-0Og"/>
                                 <include reference="fZd-uh-Oxu"/>
                                 <include reference="8e4-Gf-QYS"/>
-                                <include reference="FZp-Qm-8rg"/>
                             </mask>
                         </variation>
                     </view>
@@ -477,7 +490,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olo-4u-3gJ" sceneMemberID="firstResponder"/>
-                <exit id="wDt-CX-sH9" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="i1j-ii-xVb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1430" y="-14"/>
         </scene>
@@ -490,6 +503,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6lP-JK-45q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zAF-gx-qc4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gn3-4c-OCq">
@@ -524,14 +538,19 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="-8" width="400" height="808"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="FeQ-LO-pCe" id="WUi-Zz-PEi"/>
                                     <outlet property="delegate" destination="FeQ-LO-pCe" id="lhS-z8-tfy"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-BR-get">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Lista de Participantes" id="LgF-o7-Idb">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="PNM-ms-Fqn"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -553,6 +572,7 @@
                                 <exclude reference="gn3-4c-OCq"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="ngw-YG-cyu"/>
                                 <exclude reference="1fG-KF-weZ"/>
                                 <exclude reference="LRh-qi-sma"/>
                                 <exclude reference="Nus-ce-Epe"/>
@@ -560,7 +580,6 @@
                                 <exclude reference="V9U-ps-tRN"/>
                                 <exclude reference="Wwu-eL-rdx"/>
                                 <exclude reference="vCQ-R1-KxG"/>
-                                <exclude reference="ngw-YG-cyu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -568,6 +587,7 @@
                                 <include reference="gn3-4c-OCq"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="ngw-YG-cyu"/>
                                 <include reference="1fG-KF-weZ"/>
                                 <include reference="LRh-qi-sma"/>
                                 <exclude reference="Nus-ce-Epe"/>
@@ -575,14 +595,13 @@
                                 <include reference="V9U-ps-tRN"/>
                                 <exclude reference="Wwu-eL-rdx"/>
                                 <exclude reference="vCQ-R1-KxG"/>
-                                <include reference="ngw-YG-cyu"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsp-Km-z2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339.5" y="53.25"/>
+            <point key="canvasLocation" x="2200.5" y="-20.25"/>
         </scene>
     </scenes>
     <resources>
