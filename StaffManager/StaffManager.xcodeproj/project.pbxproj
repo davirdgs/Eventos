@@ -9,6 +9,25 @@
 /* Begin PBXBuildFile section */
 		553A696B1B4C3E9D006C7BED /* CollectionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553A696A1B4C3E9D006C7BED /* CollectionMenuViewController.swift */; };
 		553A696D1B4C4BA1006C7BED /* CollectionMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553A696C1B4C4BA1006C7BED /* CollectionMenuCell.swift */; };
+		55B0D6FF1B53E75E003AA066 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6ED1B53E75E003AA066 /* ArrayExt.swift */; };
+		55B0D7001B53E75E003AA066 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6EE1B53E75E003AA066 /* Common.swift */; };
+		55B0D7011B53E75E003AA066 /* RangeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6EF1B53E75E003AA066 /* RangeExt.swift */; };
+		55B0D7021B53E75E003AA066 /* SABumpTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F01B53E75E003AA066 /* SABumpTracker.swift */; };
+		55B0D7031B53E75E003AA066 /* SACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F11B53E75E003AA066 /* SACell.swift */; };
+		55B0D7041B53E75E003AA066 /* SACellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F21B53E75E003AA066 /* SACellModel.swift */; };
+		55B0D7051B53E75E003AA066 /* SAFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F31B53E75E003AA066 /* SAFlowLayout.swift */; };
+		55B0D7061B53E75E003AA066 /* SAFlowLayoutSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F41B53E75E003AA066 /* SAFlowLayoutSupplementaryView.swift */; };
+		55B0D7071B53E75E003AA066 /* SAFlowLayoutSupplementaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F51B53E75E003AA066 /* SAFlowLayoutSupplementaryViewModel.swift */; };
+		55B0D7081B53E75E003AA066 /* SALayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F61B53E75E003AA066 /* SALayout.swift */; };
+		55B0D7091B53E75E003AA066 /* Sapporo+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F71B53E75E003AA066 /* Sapporo+DataSource.swift */; };
+		55B0D70A1B53E75E003AA066 /* Sapporo+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F81B53E75E003AA066 /* Sapporo+Delegate.swift */; };
+		55B0D70B1B53E75E003AA066 /* Sapporo+DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6F91B53E75E003AA066 /* Sapporo+DelegateFlowLayout.swift */; };
+		55B0D70C1B53E75E003AA066 /* Sapporo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6FA1B53E75E003AA066 /* Sapporo.swift */; };
+		55B0D70D1B53E75E003AA066 /* SapporoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6FB1B53E75E003AA066 /* SapporoDelegate.swift */; };
+		55B0D70E1B53E75E003AA066 /* SASection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6FC1B53E75E003AA066 /* SASection.swift */; };
+		55B0D70F1B53E75E003AA066 /* UICollectionReusableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6FD1B53E75E003AA066 /* UICollectionReusableViewExt.swift */; };
+		55B0D7101B53E75E003AA066 /* UICollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D6FE1B53E75E003AA066 /* UICollectionViewExt.swift */; };
+		55B0D7231B53ECEA003AA066 /* StatusCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0D7221B53ECEA003AA066 /* StatusCollectionViewController.swift */; };
 		55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */; };
 		55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01611B4BF37D00E8E037 /* StaffManager.xcdatamodeld */; };
 		55DC01651B4BF37D00E8E037 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01641B4BF37D00E8E037 /* ViewController.swift */; };
@@ -40,6 +59,25 @@
 /* Begin PBXFileReference section */
 		553A696A1B4C3E9D006C7BED /* CollectionMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMenuViewController.swift; sourceTree = "<group>"; };
 		553A696C1B4C4BA1006C7BED /* CollectionMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMenuCell.swift; sourceTree = "<group>"; };
+		55B0D6ED1B53E75E003AA066 /* ArrayExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
+		55B0D6EE1B53E75E003AA066 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		55B0D6EF1B53E75E003AA066 /* RangeExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeExt.swift; sourceTree = "<group>"; };
+		55B0D6F01B53E75E003AA066 /* SABumpTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SABumpTracker.swift; sourceTree = "<group>"; };
+		55B0D6F11B53E75E003AA066 /* SACell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACell.swift; sourceTree = "<group>"; };
+		55B0D6F21B53E75E003AA066 /* SACellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACellModel.swift; sourceTree = "<group>"; };
+		55B0D6F31B53E75E003AA066 /* SAFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAFlowLayout.swift; sourceTree = "<group>"; };
+		55B0D6F41B53E75E003AA066 /* SAFlowLayoutSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAFlowLayoutSupplementaryView.swift; sourceTree = "<group>"; };
+		55B0D6F51B53E75E003AA066 /* SAFlowLayoutSupplementaryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAFlowLayoutSupplementaryViewModel.swift; sourceTree = "<group>"; };
+		55B0D6F61B53E75E003AA066 /* SALayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SALayout.swift; sourceTree = "<group>"; };
+		55B0D6F71B53E75E003AA066 /* Sapporo+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sapporo+DataSource.swift"; sourceTree = "<group>"; };
+		55B0D6F81B53E75E003AA066 /* Sapporo+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sapporo+Delegate.swift"; sourceTree = "<group>"; };
+		55B0D6F91B53E75E003AA066 /* Sapporo+DelegateFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sapporo+DelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		55B0D6FA1B53E75E003AA066 /* Sapporo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sapporo.swift; sourceTree = "<group>"; };
+		55B0D6FB1B53E75E003AA066 /* SapporoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapporoDelegate.swift; sourceTree = "<group>"; };
+		55B0D6FC1B53E75E003AA066 /* SASection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SASection.swift; sourceTree = "<group>"; };
+		55B0D6FD1B53E75E003AA066 /* UICollectionReusableViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionReusableViewExt.swift; sourceTree = "<group>"; };
+		55B0D6FE1B53E75E003AA066 /* UICollectionViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExt.swift; sourceTree = "<group>"; };
+		55B0D7221B53ECEA003AA066 /* StatusCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusCollectionViewController.swift; path = ../StatusCollectionViewController.swift; sourceTree = "<group>"; };
 		55DC015A1B4BF37D00E8E037 /* StaffManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaffManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DC015E1B4BF37D00E8E037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +118,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55B0D6EC1B53E75E003AA066 /* Sapporo */ = {
+			isa = PBXGroup;
+			children = (
+				55B0D6ED1B53E75E003AA066 /* ArrayExt.swift */,
+				55B0D6EE1B53E75E003AA066 /* Common.swift */,
+				55B0D6EF1B53E75E003AA066 /* RangeExt.swift */,
+				55B0D6F01B53E75E003AA066 /* SABumpTracker.swift */,
+				55B0D6F11B53E75E003AA066 /* SACell.swift */,
+				55B0D6F21B53E75E003AA066 /* SACellModel.swift */,
+				55B0D6F31B53E75E003AA066 /* SAFlowLayout.swift */,
+				55B0D6F41B53E75E003AA066 /* SAFlowLayoutSupplementaryView.swift */,
+				55B0D6F51B53E75E003AA066 /* SAFlowLayoutSupplementaryViewModel.swift */,
+				55B0D6F61B53E75E003AA066 /* SALayout.swift */,
+				55B0D6F71B53E75E003AA066 /* Sapporo+DataSource.swift */,
+				55B0D6F81B53E75E003AA066 /* Sapporo+Delegate.swift */,
+				55B0D6F91B53E75E003AA066 /* Sapporo+DelegateFlowLayout.swift */,
+				55B0D6FA1B53E75E003AA066 /* Sapporo.swift */,
+				55B0D6FB1B53E75E003AA066 /* SapporoDelegate.swift */,
+				55B0D6FC1B53E75E003AA066 /* SASection.swift */,
+				55B0D6FD1B53E75E003AA066 /* UICollectionReusableViewExt.swift */,
+				55B0D6FE1B53E75E003AA066 /* UICollectionViewExt.swift */,
+			);
+			name = Sapporo;
+			path = StaffManager/Sapporo;
+			sourceTree = "<group>";
+		};
 		55DC01511B4BF37D00E8E037 = {
 			isa = PBXGroup;
 			children = (
+				55B0D6EC1B53E75E003AA066 /* Sapporo */,
 				55DC015C1B4BF37D00E8E037 /* StaffManager */,
 				55DC01751B4BF37D00E8E037 /* StaffManagerTests */,
 				55DC015B1B4BF37D00E8E037 /* Products */,
@@ -105,13 +170,9 @@
 				55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */,
 				C4D8AA531B4C4BA800C2E248 /* View */,
 				55DC01661B4BF37D00E8E037 /* Main.storyboard */,
-				55EC447D1B4D622700B140A2 /* PlanViewController.swift */,
-				55EC447B1B4D61FF00B140A2 /* MapsViewController.swift */,
 				55EC44791B4D5B3800B140A2 /* FooterMenuView.swift */,
 				55EC44771B4D586300B140A2 /* HeaderMenuView.swift */,
 				553A696C1B4C4BA1006C7BED /* CollectionMenuCell.swift */,
-				553A696A1B4C3E9D006C7BED /* CollectionMenuViewController.swift */,
-				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
 				55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */,
 				55DC01691B4BF37D00E8E037 /* Images.xcassets */,
 				55DC016B1B4BF37D00E8E037 /* LaunchScreen.xib */,
@@ -166,8 +227,13 @@
 		C4D8AA531B4C4BA800C2E248 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55B0D7221B53ECEA003AA066 /* StatusCollectionViewController.swift */,
 				C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */,
 				55DC01641B4BF37D00E8E037 /* ViewController.swift */,
+				55EC447D1B4D622700B140A2 /* PlanViewController.swift */,
+				55EC447B1B4D61FF00B140A2 /* MapsViewController.swift */,
+				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
+				553A696A1B4C3E9D006C7BED /* CollectionMenuViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -272,18 +338,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B0D7031B53E75E003AA066 /* SACell.swift in Sources */,
+				55B0D7021B53E75E003AA066 /* SABumpTracker.swift in Sources */,
+				55B0D70F1B53E75E003AA066 /* UICollectionReusableViewExt.swift in Sources */,
+				55B0D7061B53E75E003AA066 /* SAFlowLayoutSupplementaryView.swift in Sources */,
+				55B0D7001B53E75E003AA066 /* Common.swift in Sources */,
 				55EC447C1B4D61FF00B140A2 /* MapsViewController.swift in Sources */,
 				C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */,
 				55DC01651B4BF37D00E8E037 /* ViewController.swift in Sources */,
+				55B0D7011B53E75E003AA066 /* RangeExt.swift in Sources */,
 				55EC447E1B4D622700B140A2 /* PlanViewController.swift in Sources */,
+				55B0D7101B53E75E003AA066 /* UICollectionViewExt.swift in Sources */,
+				55B0D70A1B53E75E003AA066 /* Sapporo+Delegate.swift in Sources */,
+				55B0D7071B53E75E003AA066 /* SAFlowLayoutSupplementaryViewModel.swift in Sources */,
+				55B0D7231B53ECEA003AA066 /* StatusCollectionViewController.swift in Sources */,
 				553A696B1B4C3E9D006C7BED /* CollectionMenuViewController.swift in Sources */,
+				55B0D7081B53E75E003AA066 /* SALayout.swift in Sources */,
 				55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */,
+				55B0D70D1B53E75E003AA066 /* SapporoDelegate.swift in Sources */,
 				55EC44781B4D586300B140A2 /* HeaderMenuView.swift in Sources */,
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
+				55B0D70E1B53E75E003AA066 /* SASection.swift in Sources */,
+				55B0D70C1B53E75E003AA066 /* Sapporo.swift in Sources */,
 				55EC447A1B4D5B3800B140A2 /* FooterMenuView.swift in Sources */,
+				55B0D7051B53E75E003AA066 /* SAFlowLayout.swift in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
 				C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */,
+				55B0D6FF1B53E75E003AA066 /* ArrayExt.swift in Sources */,
+				55B0D7091B53E75E003AA066 /* Sapporo+DataSource.swift in Sources */,
 				553A696D1B4C4BA1006C7BED /* CollectionMenuCell.swift in Sources */,
+				55B0D7041B53E75E003AA066 /* SACellModel.swift in Sources */,
+				55B0D70B1B53E75E003AA066 /* Sapporo+DelegateFlowLayout.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
 				C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */,
 			);

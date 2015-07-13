@@ -51,6 +51,27 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
         return cell
     }
     
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        switch(indexPath.row) {
+        case 0:
+            performSegueWithIdentifier("toAccreditation", sender: self)
+            break
+        case 1:
+            performSegueWithIdentifier("toStatus", sender: self)
+            break
+        case 2:
+            performSegueWithIdentifier("toPlan", sender: self)
+            break
+        case 3:
+            performSegueWithIdentifier("toMaps", sender: self)
+            break
+        default:
+            print(indexPath.row)
+        }
+        
+    }
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: 170, height: 170)
     }
