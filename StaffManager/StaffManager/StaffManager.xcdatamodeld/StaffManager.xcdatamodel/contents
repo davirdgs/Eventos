@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Participante" representedClassName="PRODUCT_MODULE_NAME.Participante" syncable="YES">
+    <entity name="Participante" representedClassName="StaffManager.Participante" syncable="YES">
         <attribute name="emailParticipante" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomeParticipante" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photoParticipante" optional="YES" attributeType="Binary" syncable="YES"/>

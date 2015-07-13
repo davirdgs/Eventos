@@ -19,6 +19,9 @@
 		C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */; };
 		C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */; };
 		C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */; };
+		C4D8AA561B4C5D5A00C2E248 /* ParticipanteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA551B4C5D5A00C2E248 /* ParticipanteDAO.swift */; };
+		C4D8AA5A1B4C602400C2E248 /* ParticipanteServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA591B4C602400C2E248 /* ParticipanteServices.swift */; };
+		C4D8AA8A1B541D4700C2E248 /* ParticipantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA891B541D4700C2E248 /* ParticipantListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredenciamentoViewController.swift; sourceTree = "<group>"; };
 		C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Participante.swift; path = VO/Participante.swift; sourceTree = "<group>"; };
 		C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		C4D8AA551B4C5D5A00C2E248 /* ParticipanteDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipanteDAO.swift; sourceTree = "<group>"; };
+		C4D8AA591B4C602400C2E248 /* ParticipanteServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipanteServices.swift; sourceTree = "<group>"; };
+		C4D8AA891B541D4700C2E248 /* ParticipantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +95,11 @@
 		55DC015C1B4BF37D00E8E037 /* StaffManager */ = {
 			isa = PBXGroup;
 			children = (
+				C4D8AA581B4C5FC200C2E248 /* Services */,
 				C4D8AA521B4C4B3500C2E248 /* Persistence */,
+				C4D8AA541B4C5AA800C2E248 /* View */,
+				C4D8AA531B4C4BA800C2E248 /* Controller */,
 				55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */,
-				C4D8AA531B4C4BA800C2E248 /* View */,
-				55DC01661B4BF37D00E8E037 /* Main.storyboard */,
-				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
 				55DC01821B4BFF1800E8E037 /* newCustomSegue.swift */,
 				55DC01691B4BF37D00E8E037 /* Images.xcassets */,
 				55DC016B1B4BF37D00E8E037 /* LaunchScreen.xib */,
@@ -139,19 +145,46 @@
 		C4D8AA521B4C4B3500C2E248 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */,
+				C4D8AA571B4C5D6400C2E248 /* DAO */,
 				C4D8AA4F1B4C4AAE00C2E248 /* VO */,
+				C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */,
 			);
 			name = Persistence;
 			sourceTree = "<group>";
 		};
-		C4D8AA531B4C4BA800C2E248 /* View */ = {
+		C4D8AA531B4C4BA800C2E248 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */,
 				55DC01641B4BF37D00E8E037 /* ViewController.swift */,
+				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
+				C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */,
+				C4D8AA891B541D4700C2E248 /* ParticipantListViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C4D8AA541B4C5AA800C2E248 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55DC01661B4BF37D00E8E037 /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C4D8AA571B4C5D6400C2E248 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				C4D8AA551B4C5D5A00C2E248 /* ParticipanteDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		C4D8AA581B4C5FC200C2E248 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4D8AA591B4C602400C2E248 /* ParticipanteServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D8AA561B4C5D5A00C2E248 /* ParticipanteDAO.swift in Sources */,
 				C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */,
 				55DC01651B4BF37D00E8E037 /* ViewController.swift in Sources */,
+				C4D8AA8A1B541D4700C2E248 /* ParticipantListViewController.swift in Sources */,
+				C4D8AA5A1B4C602400C2E248 /* ParticipanteServices.swift in Sources */,
 				55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */,
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,

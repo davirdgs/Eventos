@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-class DatabaseManager
+class DataBaseManager
 {
     // Database manager singleton
-    static let sharedInstance = DatabaseManager()
+    static let sharedInstance = DataBaseManager()
     
     // MARK: - Core Data stack
     

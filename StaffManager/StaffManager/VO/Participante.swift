@@ -16,4 +16,17 @@ class Participante: NSManagedObject {
     @NSManaged var emailParticipante: String
     @NSManaged var photoParticipante: NSData
 
+    /// The designated initializer
+    convenience init()
+    {
+        // get context
+        let context:NSManagedObjectContext = DataBaseManager.sharedInstance.managedObjectContext!
+        
+        // create entity description
+        let entityDescription:NSEntityDescription? = NSEntityDescription.entityForName("Participante", inManagedObjectContext: context)
+        
+        // call super using
+        self.init(entity: entityDescription!, insertIntoManagedObjectContext: context)
+    }
+    
 }
