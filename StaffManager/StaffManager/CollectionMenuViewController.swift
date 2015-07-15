@@ -14,6 +14,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
     
     let sectionInserts = UIEdgeInsets(top: 25.0, left: 10.0, bottom: 10.0, right: 10.0)
     let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
+    let images: [String] = ["Cadastro1","Cadastro1","Cadastro1","Cadastro1"]
 
 
     override func viewDidLoad() {
@@ -46,7 +47,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionMenuCell
         
         cell.title.text = self.titles[indexPath.row]
-        cell.pinImage.image = UIImage(named: "Cadastro1")
+        cell.pinImage.image = UIImage(named: self.images[indexPath.row])
         
         return cell
     }

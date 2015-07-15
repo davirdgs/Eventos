@@ -33,6 +33,11 @@ class CredenciamentoViewController: UIViewController, UINavigationControllerDele
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func returnToAccreditation (segue: UIStoryboardSegue)
+    {
+        
+    }
+    
     @IBAction func CameraClicked(sender: AnyObject) {
         // Initialize camera and take a picture
 
