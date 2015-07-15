@@ -248,7 +248,7 @@
                     <navigationItem key="navigationItem" id="b2k-gy-ODT">
                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="bjl-8i-OoP">
                             <connections>
-                                <segue destination="QyG-va-Cls" kind="unwind" unwindAction="returnToMenu:" id="vbc-LK-Lhb"/>
+                                <segue destination="QyG-va-Cls" kind="unwind" unwindAction="returnToMenu:" id="Mxp-P6-EhI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -279,8 +279,6 @@
         <!--Calendar View Controller-->
         <scene sceneID="VYA-Qb-XBZ">
             <objects>
-                <exit id="tGP-Le-1hC" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cCv-W2-cRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ErM-Jk-Okf" customClass="CalendarViewController" customModule="StaffManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Df-qu-S52"/>
@@ -331,6 +329,8 @@
                         <outlet property="collectionView" destination="nAl-Vl-Axa" id="pvb-Dl-B5v"/>
                     </connections>
                 </viewController>
+                <exit id="tGP-Le-1hC" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCv-W2-cRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1960.5" y="701.5"/>
         </scene>
