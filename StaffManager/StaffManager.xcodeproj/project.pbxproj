@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		12BD93697E01129983AFBD73 /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
 		5598ED891B556E10005FF945 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED881B556E10005FF945 /* CalendarViewController.swift */; };
-		5598ED8B1B557033005FF945 /* CollectionMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED8A1B557033005FF945 /* CollectionMenuCell.swift */; };
 		5598ED8D1B557048005FF945 /* FooterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED8C1B557048005FF945 /* FooterMenuView.swift */; };
 		5598ED8F1B557051005FF945 /* HeaderMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED8E1B557051005FF945 /* HeaderMenuView.swift */; };
 		5598ED971B55739E005FF945 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED951B55739E005FF945 /* CalendarHeaderView.swift */; };
@@ -29,6 +28,7 @@
 		55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01841B4C044400E8E037 /* LoginViewController.swift */; };
 		55EBBE981B56832600E79C92 /* StatusCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBBE971B56832600E79C92 /* StatusCollectionViewController.swift */; };
 		55EBBE9A1B56835800E79C92 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EBBE991B56835800E79C92 /* MapsViewController.swift */; };
+		C4C7A1A91B56BFFB00B6C677 /* CollectionMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C7A1A81B56BFFB00B6C677 /* CollectionMenuCell.swift */; };
 		C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */; };
 		C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */; };
 		C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */; };
@@ -51,7 +51,6 @@
 /* Begin PBXFileReference section */
 		314198B6A86247A6DC5A8214 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5598ED881B556E10005FF945 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		5598ED8A1B557033005FF945 /* CollectionMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionMenuCell.swift; path = ../../../../../Desktop/StaffManager/StaffManager/CollectionMenuCell.swift; sourceTree = "<group>"; };
 		5598ED8C1B557048005FF945 /* FooterMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterMenuView.swift; sourceTree = "<group>"; };
 		5598ED8E1B557051005FF945 /* HeaderMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderMenuView.swift; sourceTree = "<group>"; };
 		5598ED951B55739E005FF945 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarHeaderView.swift; path = Calendar/CalendarHeaderView.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		55EBBE971B56832600E79C92 /* StatusCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCollectionViewController.swift; sourceTree = "<group>"; };
 		55EBBE991B56835800E79C92 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		62BE16C211108D8BF7D3DF71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C7A1A81B56BFFB00B6C677 /* CollectionMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMenuCell.swift; sourceTree = "<group>"; };
 		C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredenciamentoViewController.swift; sourceTree = "<group>"; };
 		C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Participante.swift; path = VO/Participante.swift; sourceTree = "<group>"; };
 		C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
@@ -211,9 +211,6 @@
 			children = (
 				55EBBE991B56835800E79C92 /* MapsViewController.swift */,
 				C4D8AA9D1B5450A400C2E248 /* CollectionMenuViewController.swift */,
-				5598ED8E1B557051005FF945 /* HeaderMenuView.swift */,
-				5598ED8C1B557048005FF945 /* FooterMenuView.swift */,
-				5598ED8A1B557033005FF945 /* CollectionMenuCell.swift */,
 				55DC01641B4BF37D00E8E037 /* ViewController.swift */,
 				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
 				C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */,
@@ -227,6 +224,9 @@
 		C4D8AA541B4C5AA800C2E248 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5598ED8E1B557051005FF945 /* HeaderMenuView.swift */,
+				5598ED8C1B557048005FF945 /* FooterMenuView.swift */,
+				C4C7A1A81B56BFFB00B6C677 /* CollectionMenuCell.swift */,
 				55DC01661B4BF37D00E8E037 /* Main.storyboard */,
 			);
 			name = View;
@@ -405,6 +405,7 @@
 				55EBBE981B56832600E79C92 /* StatusCollectionViewController.swift in Sources */,
 				5598ED8D1B557048005FF945 /* FooterMenuView.swift in Sources */,
 				5598ED971B55739E005FF945 /* CalendarHeaderView.swift in Sources */,
+				C4C7A1A91B56BFFB00B6C677 /* CollectionMenuCell.swift in Sources */,
 				5598ED891B556E10005FF945 /* CalendarViewController.swift in Sources */,
 				C4D8AA561B4C5D5A00C2E248 /* ParticipanteDAO.swift in Sources */,
 				C4D8AA511B4C4ADF00C2E248 /* DataBaseManager.swift in Sources */,
@@ -416,7 +417,6 @@
 				55DC01831B4BFF1800E8E037 /* newCustomSegue.swift in Sources */,
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
 				5598ED8F1B557051005FF945 /* HeaderMenuView.swift in Sources */,
-				5598ED8B1B557033005FF945 /* CollectionMenuCell.swift in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
 				C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
