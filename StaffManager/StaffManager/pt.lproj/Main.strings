@@ -1,0 +1,78 @@
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "2a3-2E-fOp"; */
+"2a3-2E-fOp.placeholder" = "E-mail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "6xQ-Sq-tTd"; */
+"6xQ-Sq-tTd.text" = "Titulo";
+
+/* Class = "UINavigationItem"; title = "Maps"; ObjectID = "8XT-rC-bfw"; */
+"8XT-rC-bfw.title" = "Mapas";
+
+/* Class = "UINavigationItem"; title = "Participants"; ObjectID = "Bmh-af-uMB"; */
+"Bmh-af-uMB.title" = "Participantes";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "D9y-FN-BTi"; */
+"D9y-FN-BTi.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UINavigationItem"; title = "Planning"; ObjectID = "DWu-av-yUQ"; */
+"DWu-av-yUQ.title" = "Planejamento";
+
+/* Class = "UITextField"; placeholder = "Full name"; ObjectID = "Du2-xl-XC8"; */
+"Du2-xl-XC8.placeholder" = "Nome completo";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "FPP-pi-Uip"; */
+"FPP-pi-Uip.title" = "Voltar";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "IUA-tf-x4a"; */
+"IUA-tf-x4a.title" = "Voltar";
+
+/* Class = "UITextField"; placeholder = "User"; ObjectID = "JO3-Ag-0Rs"; */
+"JO3-Ag-0Rs.placeholder" = "Usuario";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "OSC-FX-9sE"; */
+"OSC-FX-9sE.title" = "Voltar";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "P2B-ZP-IN2"; */
+"P2B-ZP-IN2.text" = "Label";
+
+/* Class = "UILabel"; text = "E-mail"; ObjectID = "Tb3-Ba-d8D"; */
+"Tb3-Ba-d8D.text" = "Email";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "WCS-NI-dlU"; */
+"WCS-NI-dlU.title" = "Voltar";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "Ywj-6l-Dtp"; */
+"Ywj-6l-Dtp.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Registration"; ObjectID = "Z8J-Yk-zG9"; */
+"Z8J-Yk-zG9.title" = "Registros";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "bjl-8i-OoP"; */
+"bjl-8i-OoP.title" = "Voltar";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "eqR-Cr-Lxp"; */
+"eqR-Cr-Lxp.text" = "Nome";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "evN-MD-a3f"; */
+"evN-MD-a3f.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "hnv-ml-rhq"; */
+"hnv-ml-rhq.normalTitle" = "Enviar";
+
+/* Class = "UIButton"; normalTitle = "Watch List"; ObjectID = "jz4-zn-m65"; */
+"jz4-zn-m65.normalTitle" = "Ver Lista";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "meO-2w-Sck"; */
+"meO-2w-Sck.normalTitle" = "Entrar";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "peD-DZ-Edi"; */
+"peD-DZ-Edi.placeholder" = "Senha";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "sFs-yM-KPD"; */
+"sFs-yM-KPD.title" = "Sair";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "tmP-xS-B2t"; */
+"tmP-xS-B2t.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Photo"; ObjectID = "wjp-Gm-x1M"; */
+"wjp-Gm-x1M.normalTitle" = "Fotos";
+
