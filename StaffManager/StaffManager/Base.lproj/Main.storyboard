@@ -37,8 +37,8 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="7jA-cM-tnT"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-2w-Sck">
-                                <rect key="frame" x="145" y="332" width="84" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-2w-Sck">
+                                <rect key="frame" x="151" y="332" width="72" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Xcm-tS-CEF"/>
                                     <constraint firstAttribute="width" constant="72" id="d2A-U4-Sck"/>

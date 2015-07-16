@@ -13,7 +13,10 @@ let reuseIdentifier = "menuCell"
 class CollectionMenuViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let sectionInserts = UIEdgeInsets(top: 25.0, left: 10.0, bottom: 10.0, right: 10.0)
-    let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
+    
+    //i18n
+    let titles = [NSLocalizedString("Registration", comment:"string for registration"), NSLocalizedString("Status", comment:"string for status"), NSLocalizedString("Planning", comment:"string for planning"), NSLocalizedString("Maps", comment:"string for maps")]
+    // let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
     let images: [String] = ["Cadastro1","Cadastro1","Cadastro1","Cadastro1"]
 
 

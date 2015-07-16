@@ -13,7 +13,11 @@ import UIKit
 class StatusCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let sectionInserts = UIEdgeInsets(top: 25.0, left: 10.0, bottom: 10.0, right: 10.0)
-    let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
+    
+    // i8n
+    let titles = [NSLocalizedString("Registration", comment:"string for registration"), NSLocalizedString("Status", comment:"string for status"), NSLocalizedString("Planning", comment:"string for planning"), NSLocalizedString("Maps", comment:"string for maps")]
+    //let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
+    
     let images: [String] = ["StatusImage1","StatusImage2","StatusImage3","StatusImage4"];
 
     
