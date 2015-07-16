@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-Ag-0Rs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-Ag-0Rs">
                                 <rect key="frame" x="128" y="165" width="120" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="R6G-uz-wSj"/>
@@ -29,7 +29,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="I7h-CE-9AW"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="peD-DZ-Edi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="peD-DZ-Edi">
                                 <rect key="frame" x="128" y="257" width="120" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -37,14 +37,14 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="7jA-cM-tnT"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-2w-Sck">
-                                <rect key="frame" x="151" y="332" width="72" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-2w-Sck">
+                                <rect key="frame" x="145" y="332" width="84" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Xcm-tS-CEF"/>
                                     <constraint firstAttribute="width" constant="72" id="d2A-U4-Sck"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -189,8 +189,8 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bm6-fN-Am8">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Mapas" id="8XT-rC-bfw">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="FPP-pi-Uip">
+                                    <navigationItem title="Maps" id="8XT-rC-bfw">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="FPP-pi-Uip">
                                             <connections>
                                                 <segue destination="hJn-GA-fs8" kind="unwind" unwindAction="returnToMenu:" id="wVj-kK-rPw"/>
                                             </connections>
@@ -261,7 +261,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="b2k-gy-ODT">
-                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="bjl-8i-OoP">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="bjl-8i-OoP">
                             <connections>
                                 <segue destination="QyG-va-Cls" kind="unwind" unwindAction="returnToMenu:" id="Mxp-P6-EhI"/>
                             </connections>
@@ -327,8 +327,8 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tb3-lI-2wg">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Planejamento" id="DWu-av-yUQ">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="IUA-tf-x4a">
+                                    <navigationItem title="Planning" id="DWu-av-yUQ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="IUA-tf-x4a">
                                             <connections>
                                                 <segue destination="tGP-Le-1hC" kind="unwind" unwindAction="returnToMenu:" id="5pG-TN-dSC"/>
                                             </connections>
@@ -370,6 +370,7 @@
         <scene sceneID="624-bc-cjw">
             <objects>
                 <navigationController id="Ka5-Sa-N9s" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iOS-bE-KNX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -382,7 +383,7 @@
             </objects>
             <point key="canvasLocation" x="858" y="-78"/>
         </scene>
-        <!--Credenciamento-->
+        <!--Registration-->
         <scene sceneID="CQn-je-eSM">
             <objects>
                 <viewController id="FFE-57-XsW" customClass="CredenciamentoViewController" customModule="StaffManager" customModuleProvider="target" sceneMemberID="viewController">
@@ -394,7 +395,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-Cr-Lxp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-Cr-Lxp">
                                 <rect key="frame" x="66" y="184" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -404,7 +405,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb3-Ba-d8D">
-                                <rect key="frame" x="63" y="234" width="49" height="21"/>
+                                <rect key="frame" x="63" y="235" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -412,8 +413,8 @@
                                     <rect key="frame" x="62" y="228" width="49" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Du2-xl-XC8">
-                                <rect key="frame" x="142" y="174" width="167" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Du2-xl-XC8">
+                                <rect key="frame" x="142" y="175" width="168" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -424,13 +425,13 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2a3-2E-fOp">
-                                <rect key="frame" x="139" y="225" width="170" height="30"/>
+                                <rect key="frame" x="139" y="226" width="171" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjp-Gm-x1M">
-                                <rect key="frame" x="80" y="285" width="32" height="30"/>
-                                <state key="normal" title="Foto">
+                                <rect key="frame" x="71" y="286" width="41" height="30"/>
+                                <state key="normal" title="Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -438,8 +439,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnv-ml-rhq">
-                                <rect key="frame" x="166" y="475" width="43" height="30"/>
-                                <state key="normal" title="Enviar">
+                                <rect key="frame" x="170" y="476" width="36" height="30"/>
+                                <state key="normal" title="Send">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -447,8 +448,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jz4-zn-m65">
-                                <rect key="frame" x="158" y="535" width="59" height="30"/>
-                                <state key="normal" title="Ver Lista">
+                                <rect key="frame" x="151" y="536" width="73" height="30"/>
+                                <state key="normal" title="Watch List">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -456,7 +457,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D9R-Nh-dpx">
-                                <rect key="frame" x="164" y="285" width="120" height="160"/>
+                                <rect key="frame" x="164" y="286" width="120" height="160"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="D9R-Nh-dpx" secondAttribute="height" multiplier="3:4" id="LjH-QU-CeP"/>
@@ -495,8 +496,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Credenciamento" id="Z8J-Yk-zG9">
-                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="OSC-FX-9sE">
+                    <navigationItem key="navigationItem" title="Registration" id="Z8J-Yk-zG9">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="OSC-FX-9sE">
                             <connections>
                                 <segue destination="i1j-ii-xVb" kind="unwind" unwindAction="returnToMenu:" id="ivh-sP-cnK"/>
                             </connections>
@@ -529,8 +530,8 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhR-fA-ZFI">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Participantes" id="Bmh-af-uMB" userLabel="Participantes">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="WCS-NI-dlU" userLabel="Voltar">
+                                    <navigationItem title="Participants" id="Bmh-af-uMB" userLabel="Participantes">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="WCS-NI-dlU" userLabel="Voltar">
                                             <connections>
                                                 <segue destination="rZj-WE-Qag" kind="unwind" unwindAction="returnToAccreditation:" id="gCl-MW-P8S"/>
                                             </connections>

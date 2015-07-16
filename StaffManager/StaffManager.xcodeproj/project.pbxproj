@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B7267AD0B131786E5AECF68 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AFB699A6FAFAA709355B0F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		12BD93697E01129983AFBD73 /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
 		5598ED891B556E10005FF945 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED881B556E10005FF945 /* CalendarViewController.swift */; };
 		5598ED8D1B557048005FF945 /* FooterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED8C1B557048005FF945 /* FooterMenuView.swift */; };
@@ -74,6 +75,7 @@
 		55DC01841B4C044400E8E037 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		55EBBE971B56832600E79C92 /* StatusCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCollectionViewController.swift; sourceTree = "<group>"; };
 		55EBBE991B56835800E79C92 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		56AFB699A6FAFAA709355B0F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BE16C211108D8BF7D3DF71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C4C7A1A81B56BFFB00B6C677 /* CollectionMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMenuCell.swift; sourceTree = "<group>"; };
 		C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredenciamentoViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12BD93697E01129983AFBD73 /* (null) in Frameworks */,
+				0B7267AD0B131786E5AECF68 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +137,7 @@
 				55DC01751B4BF37D00E8E037 /* StaffManagerTests */,
 				55DC015B1B4BF37D00E8E037 /* Products */,
 				0FED559E31881BED11036252 /* Pods */,
+				9E60941D9788D33188D68D18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +190,14 @@
 				55DC01771B4BF37D00E8E037 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E60941D9788D33188D68D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56AFB699A6FAFAA709355B0F /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C4D8AA4F1B4C4AAE00C2E248 /* VO */ = {
