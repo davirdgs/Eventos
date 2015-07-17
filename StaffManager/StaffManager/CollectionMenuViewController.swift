@@ -21,7 +21,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
                     NSLocalizedString("Maps", comment:"string for maps")]
     
     // let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
-    let images: [String] = ["Cadastro1","Cadastro1","Cadastro1","Cadastro1"]
+    let images: [String] = ["Cadastro","Notificacao","tasks","Mapa-1"]
 
 
     override func viewDidLoad() {
