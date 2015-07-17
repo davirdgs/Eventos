@@ -15,7 +15,7 @@ class StatusCollectionViewController: UICollectionViewController, UICollectionVi
     let sectionInserts = UIEdgeInsets(top: 25.0, left: 10.0, bottom: 10.0, right: 10.0)
     
     // i8n
-    let titles = [NSLocalizedString("Registration", comment:"string for registration"), NSLocalizedString("Status", comment:"string for status"), NSLocalizedString("Planning", comment:"string for planning"), NSLocalizedString("Maps", comment:"string for maps")]
+    let titles = [NSLocalizedString("OK", comment:"string for registration"), NSLocalizedString("Need people", comment:"string for status"), NSLocalizedString("To much people", comment:"string for planning"), NSLocalizedString("Need material", comment:"string for maps")]
     //let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
     
     let images: [String] = ["okStatus","missing","crowd","box"];
