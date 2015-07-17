@@ -82,18 +82,20 @@ class StatusCollectionViewController: UICollectionViewController, UICollectionVi
     
     func playNotification(imageName: String) {
         
-        var imageBackground = UIImageView(frame: CGRectMake(30, 200, 30, 30))
+        let randomNum = CGFloat(arc4random_uniform(500) + 100)
+        var imageBackground = UIImageView(frame: CGRectMake(30, randomNum, 30, 30))
         imageBackground.image = UIImage(named: imageName)
         self.view.addSubview(imageBackground)
         
-        /*
-        UIView.animateWithDuration(1.0, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
             
-            }, completion: { (result) -> Void in {
-                
-                }
-            })
-*/
+            imageBackground.frame = CGRectMake(200, randomNum, 30, 30)
+            self.view.layoutIfNeeded()
+            
+            }, completion: { (result) -> Void in
+                imageBackground.removeFromSuperview()
+        })
+        
     }
 }
 
