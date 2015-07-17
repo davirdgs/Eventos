@@ -18,7 +18,7 @@ class StatusCollectionViewController: UICollectionViewController, UICollectionVi
     let titles = [NSLocalizedString("Registration", comment:"string for registration"), NSLocalizedString("Status", comment:"string for status"), NSLocalizedString("Planning", comment:"string for planning"), NSLocalizedString("Maps", comment:"string for maps")]
     //let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
     
-    let images: [String] = ["StatusImage1","StatusImage2","StatusImage3","StatusImage4"];
+    let images: [String] = ["okStatus","missing","crowd","box"];
 
     
     override func viewDidLoad() {
@@ -64,16 +64,16 @@ class StatusCollectionViewController: UICollectionViewController, UICollectionVi
         
         switch(indexPath.row) {
         case 0:
-            playNotification("StatusImage1")
+            playNotification("okStatus")
             break
         case 1:
-            playNotification("StatusImage2")
+            playNotification("missing")
             break
         case 2:
-            playNotification("StatusImage3")
+            playNotification("crowd")
             break
         case 3:
-            playNotification("StatusImage4")
+            playNotification("box")
             break
         default:
             print(indexPath.row)
@@ -83,13 +83,13 @@ class StatusCollectionViewController: UICollectionViewController, UICollectionVi
     func playNotification(imageName: String) {
         
         let randomNum = CGFloat(arc4random_uniform(500) + 100)
-        var imageBackground = UIImageView(frame: CGRectMake(30, randomNum, 30, 30))
+        var imageBackground = UIImageView(frame: CGRectMake(30, randomNum, 50, 50))
         imageBackground.image = UIImage(named: imageName)
         self.view.addSubview(imageBackground)
         
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             
-            imageBackground.frame = CGRectMake(200, randomNum, 30, 30)
+            imageBackground.frame = CGRectMake(200, randomNum, 50, 50)
             self.view.layoutIfNeeded()
             
             }, completion: { (result) -> Void in
