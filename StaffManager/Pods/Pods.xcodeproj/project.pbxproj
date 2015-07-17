@@ -7,246 +7,264 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BF3A47EEDED5191B87BC61D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75102B58FA44F26BB67A918F /* Foundation.framework */; };
-		1ECE5A031AB92CFAE8D2ADC4 /* UICollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC731AAB40A011201209254 /* UICollectionViewExt.swift */; };
-		32D6CEB77DB5B7E61ED6062D /* SACellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680221D97C32518000CA8DC /* SACellModel.swift */; };
-		333B2CC8EC42BD148B9C0978 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72EE4A5C1FA3B8D3A981FD /* ArrayExt.swift */; };
-		35F04E78029D0A450D9DBF21 /* Sapporo+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D150A6AFFAFAB29F94C84D2 /* Sapporo+Delegate.swift */; };
-		4FCF51C730EEAAC28D5EAE64 /* Sapporo+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA9BE7CCD57F9EC0CE4570 /* Sapporo+DataSource.swift */; };
-		526A139EC898F36DDDA44A4F /* RangeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38A132D224D7F998B949E1 /* RangeExt.swift */; };
-		61842D3A0591608965979795 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75102B58FA44F26BB67A918F /* Foundation.framework */; };
-		6274E579E198E2129CA13FA1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6FD98B44EFD50418AE5E13 /* Common.swift */; };
-		6E58B37E6FE0F93740314CD7 /* SABumpTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBC7C6A47E0C02AAB3DAECD /* SABumpTracker.swift */; };
-		83E3DB83AD12D18245F6101F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5222BD1C838169B9D5DF60 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		883AB8C29563A26FFF109FAA /* SAFlowLayoutSupplementaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311C37365B04F19CD141CA8C /* SAFlowLayoutSupplementaryViewModel.swift */; };
-		98761F881B8AB65C8787836E /* SAFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7341B24A86FD92EB2C77F3E7 /* SAFlowLayout.swift */; };
-		98B3CF97B747C24538E92813 /* Pods-Sapporo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D11F870EAFB47B9CB2A978BD /* Pods-Sapporo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E398145C2AFDC9E17F201A1 /* SapporoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF3B26C08CF0C413F5888F /* SapporoDelegate.swift */; };
-		A6C849903D0DDC54C6E4BB1A /* Pods-Sapporo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA67DE4FC491CDE488360C7 /* Pods-Sapporo-dummy.m */; };
-		A9D3C70B951B5376936C2C82 /* SACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4429E7B13CDD60890408E478 /* SACell.swift */; };
-		C20D91F272F527A3795AE9A2 /* UICollectionReusableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8BD2944E17533D575526F /* UICollectionReusableViewExt.swift */; };
-		D0280AD03B0470BC26858EB4 /* SASection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB80ECB1C87AB1827A6FC4F /* SASection.swift */; };
-		D427D860A3FABA3E1A91AB2C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD685E848C0D4E36C09B0B62 /* Pods-dummy.m */; };
-		D6CE256C113DB9ADD01A7C2E /* Sapporo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7177D696ABF39A771B3A6E4 /* Sapporo.swift */; };
-		DA553506546887072F5E311C /* SALayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D92D23C79E3DC225F1C3 /* SALayout.swift */; };
-		DF09F7CFD8ED6044F68D4C7B /* SAFlowLayoutSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98180688C28406A4DA0385 /* SAFlowLayoutSupplementaryView.swift */; };
-		EDBECBEB7519CB04C54F7C92 /* Sapporo+DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB737853CA4BDE9E4D5BA7 /* Sapporo+DelegateFlowLayout.swift */; };
+		05DB9A3D04B9FCA5517882F8 /* Sapporo+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A625D9527AFBEBE086F4F /* Sapporo+DataSource.swift */; };
+		1642F69C3531E91F54CAC623 /* SABumpTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7B2089F1D907DA277A7BF /* SABumpTracker.swift */; };
+		1E43C4E0836D3B149EA6FCA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52414E2727F1DB1CF135967F /* Foundation.framework */; };
+		23B495932EE580467C340EC0 /* SACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091970CCCFC4A24181357FEC /* SACell.swift */; };
+		267C92D62325ADC57ECA1CD5 /* SAFlowLayoutSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA3DD1AF2064ACE8B6CC79 /* SAFlowLayoutSupplementaryView.swift */; };
+		2E8A3171D49F95339158BF7B /* Sapporo+DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBAEAB789E858DAC2F4855 /* Sapporo+DelegateFlowLayout.swift */; };
+		34BA04FB840EA6731E8ED0D1 /* SASection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B6BDB4FAD5B237D72709F /* SASection.swift */; };
+		43DD89142C02679DE06E893C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A6663251D25EA4C9B8E08 /* Common.swift */; };
+		524620180B9EF3102CC9A768 /* SALayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36CB5F84382EE7D3A1C47B3 /* SALayout.swift */; };
+		54A60983051889527C66BC1A /* Sapporo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAD4AF83B4E732C9E180B9 /* Sapporo.swift */; };
+		8789E1B86D69604E97F98641 /* Pods-Sapporo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D427BC3D5717ADDFCF5E8CEF /* Pods-Sapporo-dummy.m */; };
+		89CBD103AFAE05F374CE1FDA /* SAFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51487F2BC118467A0F5123F0 /* SAFlowLayout.swift */; };
+		9D526EEFE2CE366078382E45 /* UICollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A449818D41530EB0B2ED919 /* UICollectionViewExt.swift */; };
+		9F91D0A72F4E0BBBF44B14D9 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBB84581D521298583F5FC5 /* ArrayExt.swift */; };
+		A68F77E52C6C846C4570614D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 474450437781FA1984E7CD62 /* Pods-dummy.m */; };
+		CAC7D8F0F08CE7838FD98DB4 /* RangeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F9BB12C381E52AE2780B2 /* RangeExt.swift */; };
+		CE93AE11C345BDDC97BA3420 /* Pods-Sapporo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE800A9360F98DB8757FB0B /* Pods-Sapporo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDAC805298D14C639CF26BF0 /* UICollectionReusableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB6A5C4542969B1F99054F /* UICollectionReusableViewExt.swift */; };
+		DF8E9086C31D69CD984B669A /* Sapporo+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197E45628359875D73BD96FE /* Sapporo+Delegate.swift */; };
+		E45EB2976055809970DA77D4 /* SACellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72286327BD9B358CCEE06E /* SACellModel.swift */; };
+		E8FAD59E2CC5C30944A471B2 /* SapporoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697FB7F780CE8E71EC812A07 /* SapporoDelegate.swift */; };
+		E953EE1A7B8E86DDCD249D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52414E2727F1DB1CF135967F /* Foundation.framework */; };
+		EC2C2508E8EFDE173D4AE32D /* SAFlowLayoutSupplementaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED52B069960FF1CB47E08708 /* SAFlowLayoutSupplementaryViewModel.swift */; };
+		FFD0D5EAAD940EE76DDAF126 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F19C78B968A14E41987394BF /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38E962B13189590FF4D53822 /* PBXContainerItemProxy */ = {
+		0B84BDF09CFACC9A1A71C02F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C89C0E91FFFC1433A853B4AA /* Project object */;
+			containerPortal = 314508B81FF08369DEE7AE74 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63C10DC16A0C2AD9D097C78A;
+			remoteGlobalIDString = 7673EED2D9FE44272C9B50D8;
 			remoteInfo = "Pods-Sapporo";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06BEBFA44537F6FDAEAF4A76 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		20B6EFA20BCF02176376E624 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24AA9BE7CCD57F9EC0CE4570 /* Sapporo+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+DataSource.swift"; path = "Sapporo/Sapporo+DataSource.swift"; sourceTree = "<group>"; };
-		298B710412FA8969F5ADE145 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2A98180688C28406A4DA0385 /* SAFlowLayoutSupplementaryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayoutSupplementaryView.swift; path = Sapporo/SAFlowLayoutSupplementaryView.swift; sourceTree = "<group>"; };
-		2EB9D92D23C79E3DC225F1C3 /* SALayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SALayout.swift; path = Sapporo/SALayout.swift; sourceTree = "<group>"; };
-		311C37365B04F19CD141CA8C /* SAFlowLayoutSupplementaryViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayoutSupplementaryViewModel.swift; path = Sapporo/SAFlowLayoutSupplementaryViewModel.swift; sourceTree = "<group>"; };
-		3236D6D837750FF50B54DED0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		387C1030FD3231345E12C3BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39FF3B26C08CF0C413F5888F /* SapporoDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SapporoDelegate.swift; path = Sapporo/SapporoDelegate.swift; sourceTree = "<group>"; };
-		3F12E34C299ADFFCC1B8753F /* Pods-Sapporo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sapporo-prefix.pch"; sourceTree = "<group>"; };
-		3F6FD98B44EFD50418AE5E13 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Sapporo/Common.swift; sourceTree = "<group>"; };
-		4429E7B13CDD60890408E478 /* SACell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SACell.swift; path = Sapporo/SACell.swift; sourceTree = "<group>"; };
-		4D150A6AFFAFAB29F94C84D2 /* Sapporo+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+Delegate.swift"; path = "Sapporo/Sapporo+Delegate.swift"; sourceTree = "<group>"; };
-		5046BB6DCED04EEF3EE67ADF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5680221D97C32518000CA8DC /* SACellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SACellModel.swift; path = Sapporo/SACellModel.swift; sourceTree = "<group>"; };
-		5B7A7FDBF7F4A608B1D6ABAA /* Pods-Sapporo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sapporo-Private.xcconfig"; sourceTree = "<group>"; };
-		60AB737853CA4BDE9E4D5BA7 /* Sapporo+DelegateFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+DelegateFlowLayout.swift"; path = "Sapporo/Sapporo+DelegateFlowLayout.swift"; sourceTree = "<group>"; };
-		677F1F07A94561F0E6249865 /* Sapporo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sapporo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7341B24A86FD92EB2C77F3E7 /* SAFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayout.swift; path = Sapporo/SAFlowLayout.swift; sourceTree = "<group>"; };
-		75102B58FA44F26BB67A918F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7BF8BD2944E17533D575526F /* UICollectionReusableViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionReusableViewExt.swift; path = Sapporo/UICollectionReusableViewExt.swift; sourceTree = "<group>"; };
-		800D61E45403DF0481F07374 /* Pods-Sapporo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sapporo.modulemap"; sourceTree = "<group>"; };
-		9D5222BD1C838169B9D5DF60 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		A5EBC770E9CAE51A0D70938A /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AFBC7C6A47E0C02AAB3DAECD /* SABumpTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SABumpTracker.swift; path = Sapporo/SABumpTracker.swift; sourceTree = "<group>"; };
-		BD685E848C0D4E36C09B0B62 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		C2D883A6A79D83A60D7EFA42 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		C7309D20B6FA9FE0D418C39A /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		D11F870EAFB47B9CB2A978BD /* Pods-Sapporo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sapporo-umbrella.h"; sourceTree = "<group>"; };
-		DB5C40D23DE15AA1AAD850D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DBC731AAB40A011201209254 /* UICollectionViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewExt.swift; path = Sapporo/UICollectionViewExt.swift; sourceTree = "<group>"; };
-		E7177D696ABF39A771B3A6E4 /* Sapporo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sapporo.swift; path = Sapporo/Sapporo.swift; sourceTree = "<group>"; };
-		EB2B0D4F55838AD6ED1AD21E /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		EE38A132D224D7F998B949E1 /* RangeExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeExt.swift; path = Sapporo/RangeExt.swift; sourceTree = "<group>"; };
-		EFB80ECB1C87AB1827A6FC4F /* SASection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SASection.swift; path = Sapporo/SASection.swift; sourceTree = "<group>"; };
-		F3863457E0129AED827B46A8 /* Pods-Sapporo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sapporo.xcconfig"; sourceTree = "<group>"; };
-		F9549A9B71E5CD9A965231B5 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		FA72EE4A5C1FA3B8D3A981FD /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sapporo/ArrayExt.swift; sourceTree = "<group>"; };
-		FBA67DE4FC491CDE488360C7 /* Pods-Sapporo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sapporo-dummy.m"; sourceTree = "<group>"; };
+		064E0BE3BF02C1E776C42091 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		091970CCCFC4A24181357FEC /* SACell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SACell.swift; path = Sapporo/SACell.swift; sourceTree = "<group>"; };
+		0C694D3FE4660D69109F7F30 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		1580D9A85EAB799DC7D696EF /* Pods-Sapporo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sapporo-prefix.pch"; sourceTree = "<group>"; };
+		16EA3DD1AF2064ACE8B6CC79 /* SAFlowLayoutSupplementaryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayoutSupplementaryView.swift; path = Sapporo/SAFlowLayoutSupplementaryView.swift; sourceTree = "<group>"; };
+		17FBAEAB789E858DAC2F4855 /* Sapporo+DelegateFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+DelegateFlowLayout.swift"; path = "Sapporo/Sapporo+DelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		197E45628359875D73BD96FE /* Sapporo+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+Delegate.swift"; path = "Sapporo/Sapporo+Delegate.swift"; sourceTree = "<group>"; };
+		1A449818D41530EB0B2ED919 /* UICollectionViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewExt.swift; path = Sapporo/UICollectionViewExt.swift; sourceTree = "<group>"; };
+		1A6F2518B82F8F668DD1EBDF /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		1AE800A9360F98DB8757FB0B /* Pods-Sapporo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sapporo-umbrella.h"; sourceTree = "<group>"; };
+		1D84E09E980B0AC719BB046E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30B8D6F818A28A4CE6CEFC2F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		3147DA335D3D25C8384920AF /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		474450437781FA1984E7CD62 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		51487F2BC118467A0F5123F0 /* SAFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayout.swift; path = Sapporo/SAFlowLayout.swift; sourceTree = "<group>"; };
+		52414E2727F1DB1CF135967F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5817BFA0FA8E34495F80AE43 /* Pods-Sapporo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sapporo.modulemap"; sourceTree = "<group>"; };
+		66CAD4AF83B4E732C9E180B9 /* Sapporo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sapporo.swift; path = Sapporo/Sapporo.swift; sourceTree = "<group>"; };
+		674A625D9527AFBEBE086F4F /* Sapporo+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sapporo+DataSource.swift"; path = "Sapporo/Sapporo+DataSource.swift"; sourceTree = "<group>"; };
+		697FB7F780CE8E71EC812A07 /* SapporoDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SapporoDelegate.swift; path = Sapporo/SapporoDelegate.swift; sourceTree = "<group>"; };
+		6C0D9FC1996B424BF206FA1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AC42F218DA4C352D1575BCC /* Sapporo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sapporo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3181E6BFEF1494A48D8523 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		8ABB6A5C4542969B1F99054F /* UICollectionReusableViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionReusableViewExt.swift; path = Sapporo/UICollectionReusableViewExt.swift; sourceTree = "<group>"; };
+		8ED7B2089F1D907DA277A7BF /* SABumpTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SABumpTracker.swift; path = Sapporo/SABumpTracker.swift; sourceTree = "<group>"; };
+		9B6F9BB12C381E52AE2780B2 /* RangeExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeExt.swift; path = Sapporo/RangeExt.swift; sourceTree = "<group>"; };
+		9C72286327BD9B358CCEE06E /* SACellModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SACellModel.swift; path = Sapporo/SACellModel.swift; sourceTree = "<group>"; };
+		9CB3209E71063C8757F3164E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45972C9BAA1096EB96F8C9D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		B24A6663251D25EA4C9B8E08 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Sapporo/Common.swift; sourceTree = "<group>"; };
+		B36CB5F84382EE7D3A1C47B3 /* SALayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SALayout.swift; path = Sapporo/SALayout.swift; sourceTree = "<group>"; };
+		B52F1233ACFE5A3F9224D57C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDBB84581D521298583F5FC5 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sapporo/ArrayExt.swift; sourceTree = "<group>"; };
+		BF7B6BDB4FAD5B237D72709F /* SASection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SASection.swift; path = Sapporo/SASection.swift; sourceTree = "<group>"; };
+		D427BC3D5717ADDFCF5E8CEF /* Pods-Sapporo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sapporo-dummy.m"; sourceTree = "<group>"; };
+		EC7F50759E14D8B18DBDA316 /* Pods-Sapporo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sapporo-Private.xcconfig"; sourceTree = "<group>"; };
+		ED52B069960FF1CB47E08708 /* SAFlowLayoutSupplementaryViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAFlowLayoutSupplementaryViewModel.swift; path = Sapporo/SAFlowLayoutSupplementaryViewModel.swift; sourceTree = "<group>"; };
+		F19C78B968A14E41987394BF /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		F733FB847A0C2AE8E0772782 /* Pods-Sapporo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sapporo.xcconfig"; sourceTree = "<group>"; };
+		FEB848C0344BC19306EC9572 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		867F0A6E6C38C60AD4DE5108 /* Frameworks */ = {
+		771046A56E68551930429E88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61842D3A0591608965979795 /* Foundation.framework in Frameworks */,
+				1E43C4E0836D3B149EA6FCA5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88EA02CD679864E12D0A2EF4 /* Frameworks */ = {
+		EA38BCDAF2C5F6492792904D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF3A47EEDED5191B87BC61D /* Foundation.framework in Frameworks */,
+				E953EE1A7B8E86DDCD249D7D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EF4F1A02B1576E7460C8FDE /* Pods */ = {
+		3378E198B8DEADB3C5E77167 = {
 			isa = PBXGroup;
 			children = (
-				387C1030FD3231345E12C3BC /* Info.plist */,
-				F9549A9B71E5CD9A965231B5 /* Pods.modulemap */,
-				A5EBC770E9CAE51A0D70938A /* Pods-acknowledgements.markdown */,
-				C7309D20B6FA9FE0D418C39A /* Pods-acknowledgements.plist */,
-				BD685E848C0D4E36C09B0B62 /* Pods-dummy.m */,
-				EB2B0D4F55838AD6ED1AD21E /* Pods-environment.h */,
-				06BEBFA44537F6FDAEAF4A76 /* Pods-frameworks.sh */,
-				C2D883A6A79D83A60D7EFA42 /* Pods-resources.sh */,
-				9D5222BD1C838169B9D5DF60 /* Pods-umbrella.h */,
-				3236D6D837750FF50B54DED0 /* Pods.debug.xcconfig */,
-				DB5C40D23DE15AA1AAD850D8 /* Pods.release.xcconfig */,
+				B52F1233ACFE5A3F9224D57C /* Podfile */,
+				5858C048FA6B47B6C5F6AF07 /* Frameworks */,
+				988EFF4DB250519DFF754E95 /* Pods */,
+				4A95F5060EA9A42313EA8822 /* Products */,
+				F8AB6E81E075359B5EC8DC90 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		351644972342EE3F2ADA56FD /* Sapporo */ = {
+			isa = PBXGroup;
+			children = (
+				BDBB84581D521298583F5FC5 /* ArrayExt.swift */,
+				B24A6663251D25EA4C9B8E08 /* Common.swift */,
+				9B6F9BB12C381E52AE2780B2 /* RangeExt.swift */,
+				8ED7B2089F1D907DA277A7BF /* SABumpTracker.swift */,
+				091970CCCFC4A24181357FEC /* SACell.swift */,
+				9C72286327BD9B358CCEE06E /* SACellModel.swift */,
+				51487F2BC118467A0F5123F0 /* SAFlowLayout.swift */,
+				16EA3DD1AF2064ACE8B6CC79 /* SAFlowLayoutSupplementaryView.swift */,
+				ED52B069960FF1CB47E08708 /* SAFlowLayoutSupplementaryViewModel.swift */,
+				B36CB5F84382EE7D3A1C47B3 /* SALayout.swift */,
+				BF7B6BDB4FAD5B237D72709F /* SASection.swift */,
+				66CAD4AF83B4E732C9E180B9 /* Sapporo.swift */,
+				674A625D9527AFBEBE086F4F /* Sapporo+DataSource.swift */,
+				197E45628359875D73BD96FE /* Sapporo+Delegate.swift */,
+				17FBAEAB789E858DAC2F4855 /* Sapporo+DelegateFlowLayout.swift */,
+				697FB7F780CE8E71EC812A07 /* SapporoDelegate.swift */,
+				8ABB6A5C4542969B1F99054F /* UICollectionReusableViewExt.swift */,
+				1A449818D41530EB0B2ED919 /* UICollectionViewExt.swift */,
+				A6A3C16F850C61414CCBE1DB /* Support Files */,
+			);
+			path = Sapporo;
+			sourceTree = "<group>";
+		};
+		4A95F5060EA9A42313EA8822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB3209E71063C8757F3164E /* Pods.framework */,
+				7AC42F218DA4C352D1575BCC /* Sapporo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5858C048FA6B47B6C5F6AF07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D64BCBCB7F3630CA98BF305B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF53C734FA28CDDA0D3F1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D9FC1996B424BF206FA1E /* Info.plist */,
+				1A6F2518B82F8F668DD1EBDF /* Pods.modulemap */,
+				1D84E09E980B0AC719BB046E /* Pods-acknowledgements.markdown */,
+				30B8D6F818A28A4CE6CEFC2F /* Pods-acknowledgements.plist */,
+				474450437781FA1984E7CD62 /* Pods-dummy.m */,
+				0C694D3FE4660D69109F7F30 /* Pods-environment.h */,
+				7F3181E6BFEF1494A48D8523 /* Pods-frameworks.sh */,
+				3147DA335D3D25C8384920AF /* Pods-resources.sh */,
+				F19C78B968A14E41987394BF /* Pods-umbrella.h */,
+				A45972C9BAA1096EB96F8C9D /* Pods.debug.xcconfig */,
+				064E0BE3BF02C1E776C42091 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		39B76F48930C8ADCC5D74EA4 /* iOS */ = {
+		988EFF4DB250519DFF754E95 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				75102B58FA44F26BB67A918F /* Foundation.framework */,
+				351644972342EE3F2ADA56FD /* Sapporo */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		502BBC007C23CB65C3EAE79E /* Targets Support Files */ = {
+		A6A3C16F850C61414CCBE1DB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EF4F1A02B1576E7460C8FDE /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7D1BE55C99A9D0494BE27A85 /* Sapporo */ = {
-			isa = PBXGroup;
-			children = (
-				FA72EE4A5C1FA3B8D3A981FD /* ArrayExt.swift */,
-				3F6FD98B44EFD50418AE5E13 /* Common.swift */,
-				EE38A132D224D7F998B949E1 /* RangeExt.swift */,
-				AFBC7C6A47E0C02AAB3DAECD /* SABumpTracker.swift */,
-				4429E7B13CDD60890408E478 /* SACell.swift */,
-				5680221D97C32518000CA8DC /* SACellModel.swift */,
-				7341B24A86FD92EB2C77F3E7 /* SAFlowLayout.swift */,
-				2A98180688C28406A4DA0385 /* SAFlowLayoutSupplementaryView.swift */,
-				311C37365B04F19CD141CA8C /* SAFlowLayoutSupplementaryViewModel.swift */,
-				2EB9D92D23C79E3DC225F1C3 /* SALayout.swift */,
-				EFB80ECB1C87AB1827A6FC4F /* SASection.swift */,
-				E7177D696ABF39A771B3A6E4 /* Sapporo.swift */,
-				24AA9BE7CCD57F9EC0CE4570 /* Sapporo+DataSource.swift */,
-				4D150A6AFFAFAB29F94C84D2 /* Sapporo+Delegate.swift */,
-				60AB737853CA4BDE9E4D5BA7 /* Sapporo+DelegateFlowLayout.swift */,
-				39FF3B26C08CF0C413F5888F /* SapporoDelegate.swift */,
-				7BF8BD2944E17533D575526F /* UICollectionReusableViewExt.swift */,
-				DBC731AAB40A011201209254 /* UICollectionViewExt.swift */,
-				ADD6555C1E884D6918D6C286 /* Support Files */,
-			);
-			path = Sapporo;
-			sourceTree = "<group>";
-		};
-		9FDBDBE68BC32F0F4A189792 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				39B76F48930C8ADCC5D74EA4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ADD6555C1E884D6918D6C286 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				20B6EFA20BCF02176376E624 /* Info.plist */,
-				800D61E45403DF0481F07374 /* Pods-Sapporo.modulemap */,
-				F3863457E0129AED827B46A8 /* Pods-Sapporo.xcconfig */,
-				5B7A7FDBF7F4A608B1D6ABAA /* Pods-Sapporo-Private.xcconfig */,
-				FBA67DE4FC491CDE488360C7 /* Pods-Sapporo-dummy.m */,
-				3F12E34C299ADFFCC1B8753F /* Pods-Sapporo-prefix.pch */,
-				D11F870EAFB47B9CB2A978BD /* Pods-Sapporo-umbrella.h */,
+				FEB848C0344BC19306EC9572 /* Info.plist */,
+				5817BFA0FA8E34495F80AE43 /* Pods-Sapporo.modulemap */,
+				F733FB847A0C2AE8E0772782 /* Pods-Sapporo.xcconfig */,
+				EC7F50759E14D8B18DBDA316 /* Pods-Sapporo-Private.xcconfig */,
+				D427BC3D5717ADDFCF5E8CEF /* Pods-Sapporo-dummy.m */,
+				1580D9A85EAB799DC7D696EF /* Pods-Sapporo-prefix.pch */,
+				1AE800A9360F98DB8757FB0B /* Pods-Sapporo-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Sapporo";
 			sourceTree = "<group>";
 		};
-		AE3FAFAE3A617849D4D189C9 /* Pods */ = {
+		D64BCBCB7F3630CA98BF305B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7D1BE55C99A9D0494BE27A85 /* Sapporo */,
+				52414E2727F1DB1CF135967F /* Foundation.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		DC9690F2AAD28810A7FBD89E /* Products */ = {
+		F8AB6E81E075359B5EC8DC90 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5046BB6DCED04EEF3EE67ADF /* Pods.framework */,
-				677F1F07A94561F0E6249865 /* Sapporo.framework */,
+				8CF53C734FA28CDDA0D3F1D2 /* Pods */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EBE4A14DE7D4A24E5C9C29CB = {
-			isa = PBXGroup;
-			children = (
-				298B710412FA8969F5ADE145 /* Podfile */,
-				9FDBDBE68BC32F0F4A189792 /* Frameworks */,
-				AE3FAFAE3A617849D4D189C9 /* Pods */,
-				DC9690F2AAD28810A7FBD89E /* Products */,
-				502BBC007C23CB65C3EAE79E /* Targets Support Files */,
-			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		88320C7C03F5E4AB753C2A4E /* Headers */ = {
+		4B227663B85864F1B666C220 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E3DB83AD12D18245F6101F /* Pods-umbrella.h in Headers */,
+				CE93AE11C345BDDC97BA3420 /* Pods-Sapporo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE0495E650BF88D4B62DB769 /* Headers */ = {
+		ACCC59C3B3F748DB6D9F0D4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B3CF97B747C24538E92813 /* Pods-Sapporo-umbrella.h in Headers */,
+				FFD0D5EAAD940EE76DDAF126 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		63C10DC16A0C2AD9D097C78A /* Pods-Sapporo */ = {
+		67543B10BC5671A14BF93B0F /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5C81F7094AA5DF376D7C6B1 /* Build configuration list for PBXNativeTarget "Pods-Sapporo" */;
+			buildConfigurationList = BA943EC9B8C607D985016DC6 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				8EDFBE5E23D22403CF89676B /* Sources */,
-				88EA02CD679864E12D0A2EF4 /* Frameworks */,
-				BE0495E650BF88D4B62DB769 /* Headers */,
+				253D5E60E4AA69C9DB22122F /* Sources */,
+				EA38BCDAF2C5F6492792904D /* Frameworks */,
+				ACCC59C3B3F748DB6D9F0D4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50A4D92A533E3B6D2B85D666 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 9CB3209E71063C8757F3164E /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7673EED2D9FE44272C9B50D8 /* Pods-Sapporo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E3DDB3F3C1F5553CC02AB1 /* Build configuration list for PBXNativeTarget "Pods-Sapporo" */;
+			buildPhases = (
+				A3D2FAF13F846E39D4FB4F00 /* Sources */,
+				771046A56E68551930429E88 /* Frameworks */,
+				4B227663B85864F1B666C220 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -254,101 +272,140 @@
 			);
 			name = "Pods-Sapporo";
 			productName = "Pods-Sapporo";
-			productReference = 677F1F07A94561F0E6249865 /* Sapporo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9C26E4ADEE02094AE92AD972 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B2D60D350E69194C9AF3F3B5 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				EB5464D99EA54D44CE454D94 /* Sources */,
-				867F0A6E6C38C60AD4DE5108 /* Frameworks */,
-				88320C7C03F5E4AB753C2A4E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7A634927C74C4898933BE17 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 5046BB6DCED04EEF3EE67ADF /* Pods.framework */;
+			productReference = 7AC42F218DA4C352D1575BCC /* Sapporo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C89C0E91FFFC1433A853B4AA /* Project object */ = {
+		314508B81FF08369DEE7AE74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 153CB411144F2FD09587F3CF /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = E4507BB97DF9937495D92DF9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EBE4A14DE7D4A24E5C9C29CB;
-			productRefGroup = DC9690F2AAD28810A7FBD89E /* Products */;
+			mainGroup = 3378E198B8DEADB3C5E77167;
+			productRefGroup = 4A95F5060EA9A42313EA8822 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C26E4ADEE02094AE92AD972 /* Pods */,
-				63C10DC16A0C2AD9D097C78A /* Pods-Sapporo */,
+				67543B10BC5671A14BF93B0F /* Pods */,
+				7673EED2D9FE44272C9B50D8 /* Pods-Sapporo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8EDFBE5E23D22403CF89676B /* Sources */ = {
+		253D5E60E4AA69C9DB22122F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				333B2CC8EC42BD148B9C0978 /* ArrayExt.swift in Sources */,
-				6274E579E198E2129CA13FA1 /* Common.swift in Sources */,
-				A6C849903D0DDC54C6E4BB1A /* Pods-Sapporo-dummy.m in Sources */,
-				526A139EC898F36DDDA44A4F /* RangeExt.swift in Sources */,
-				6E58B37E6FE0F93740314CD7 /* SABumpTracker.swift in Sources */,
-				A9D3C70B951B5376936C2C82 /* SACell.swift in Sources */,
-				32D6CEB77DB5B7E61ED6062D /* SACellModel.swift in Sources */,
-				98761F881B8AB65C8787836E /* SAFlowLayout.swift in Sources */,
-				DF09F7CFD8ED6044F68D4C7B /* SAFlowLayoutSupplementaryView.swift in Sources */,
-				883AB8C29563A26FFF109FAA /* SAFlowLayoutSupplementaryViewModel.swift in Sources */,
-				DA553506546887072F5E311C /* SALayout.swift in Sources */,
-				D0280AD03B0470BC26858EB4 /* SASection.swift in Sources */,
-				4FCF51C730EEAAC28D5EAE64 /* Sapporo+DataSource.swift in Sources */,
-				35F04E78029D0A450D9DBF21 /* Sapporo+Delegate.swift in Sources */,
-				EDBECBEB7519CB04C54F7C92 /* Sapporo+DelegateFlowLayout.swift in Sources */,
-				D6CE256C113DB9ADD01A7C2E /* Sapporo.swift in Sources */,
-				9E398145C2AFDC9E17F201A1 /* SapporoDelegate.swift in Sources */,
-				C20D91F272F527A3795AE9A2 /* UICollectionReusableViewExt.swift in Sources */,
-				1ECE5A031AB92CFAE8D2ADC4 /* UICollectionViewExt.swift in Sources */,
+				A68F77E52C6C846C4570614D /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB5464D99EA54D44CE454D94 /* Sources */ = {
+		A3D2FAF13F846E39D4FB4F00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D427D860A3FABA3E1A91AB2C /* Pods-dummy.m in Sources */,
+				9F91D0A72F4E0BBBF44B14D9 /* ArrayExt.swift in Sources */,
+				43DD89142C02679DE06E893C /* Common.swift in Sources */,
+				8789E1B86D69604E97F98641 /* Pods-Sapporo-dummy.m in Sources */,
+				CAC7D8F0F08CE7838FD98DB4 /* RangeExt.swift in Sources */,
+				1642F69C3531E91F54CAC623 /* SABumpTracker.swift in Sources */,
+				23B495932EE580467C340EC0 /* SACell.swift in Sources */,
+				E45EB2976055809970DA77D4 /* SACellModel.swift in Sources */,
+				89CBD103AFAE05F374CE1FDA /* SAFlowLayout.swift in Sources */,
+				267C92D62325ADC57ECA1CD5 /* SAFlowLayoutSupplementaryView.swift in Sources */,
+				EC2C2508E8EFDE173D4AE32D /* SAFlowLayoutSupplementaryViewModel.swift in Sources */,
+				524620180B9EF3102CC9A768 /* SALayout.swift in Sources */,
+				34BA04FB840EA6731E8ED0D1 /* SASection.swift in Sources */,
+				05DB9A3D04B9FCA5517882F8 /* Sapporo+DataSource.swift in Sources */,
+				DF8E9086C31D69CD984B669A /* Sapporo+Delegate.swift in Sources */,
+				2E8A3171D49F95339158BF7B /* Sapporo+DelegateFlowLayout.swift in Sources */,
+				54A60983051889527C66BC1A /* Sapporo.swift in Sources */,
+				E8FAD59E2CC5C30944A471B2 /* SapporoDelegate.swift in Sources */,
+				DDAC805298D14C639CF26BF0 /* UICollectionReusableViewExt.swift in Sources */,
+				9D526EEFE2CE366078382E45 /* UICollectionViewExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A7A634927C74C4898933BE17 /* PBXTargetDependency */ = {
+		50A4D92A533E3B6D2B85D666 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Sapporo";
-			target = 63C10DC16A0C2AD9D097C78A /* Pods-Sapporo */;
-			targetProxy = 38E962B13189590FF4D53822 /* PBXContainerItemProxy */;
+			target = 7673EED2D9FE44272C9B50D8 /* Pods-Sapporo */;
+			targetProxy = 0B84BDF09CFACC9A1A71C02F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0FDB2915FD275E885A1F69AF /* Debug */ = {
+		00E2982A56FAEDD3F9FC0209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7F50759E14D8B18DBDA316 /* Pods-Sapporo-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sapporo/Pods-Sapporo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sapporo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Sapporo/Pods-Sapporo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Sapporo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04F92DA987705E77D0217596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064E0BE3BF02C1E776C42091 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E128BDF41B2A5B696EBB3DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,65 +444,7 @@
 			};
 			name = Debug;
 		};
-		142E231750D6C6A35C2DD29F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3236D6D837750FF50B54DED0 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1DA15EBAC44FB591B646FD6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7A7FDBF7F4A608B1D6ABAA /* Pods-Sapporo-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Sapporo/Pods-Sapporo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Sapporo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Sapporo/Pods-Sapporo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Sapporo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		46C744B300FD1A605AD67F9C /* Release */ = {
+		4C89BAA4E1E43C47B4426B5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -479,9 +478,9 @@
 			};
 			name = Release;
 		};
-		8D6CCD0D671211BA0C0B03F7 /* Release */ = {
+		D7DBD4ED7AA6FDD5F83CADEA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7A7FDBF7F4A608B1D6ABAA /* Pods-Sapporo-Private.xcconfig */;
+			baseConfigurationReference = EC7F50759E14D8B18DBDA316 /* Pods-Sapporo-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -506,9 +505,9 @@
 			};
 			name = Release;
 		};
-		A3FC320B992838D1DE679066 /* Release */ = {
+		E3CF00B5A7D8C9F018359AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB5C40D23DE15AA1AAD850D8 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A45972C9BAA1096EB96F8C9D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -522,50 +521,51 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		153CB411144F2FD09587F3CF /* Build configuration list for PBXProject "Pods" */ = {
+		23E3DDB3F3C1F5553CC02AB1 /* Build configuration list for PBXNativeTarget "Pods-Sapporo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0FDB2915FD275E885A1F69AF /* Debug */,
-				46C744B300FD1A605AD67F9C /* Release */,
+				00E2982A56FAEDD3F9FC0209 /* Debug */,
+				D7DBD4ED7AA6FDD5F83CADEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2D60D350E69194C9AF3F3B5 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		BA943EC9B8C607D985016DC6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				142E231750D6C6A35C2DD29F /* Debug */,
-				A3FC320B992838D1DE679066 /* Release */,
+				E3CF00B5A7D8C9F018359AB1 /* Debug */,
+				04F92DA987705E77D0217596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5C81F7094AA5DF376D7C6B1 /* Build configuration list for PBXNativeTarget "Pods-Sapporo" */ = {
+		E4507BB97DF9937495D92DF9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DA15EBAC44FB591B646FD6A /* Debug */,
-				8D6CCD0D671211BA0C0B03F7 /* Release */,
+				1E128BDF41B2A5B696EBB3DF /* Debug */,
+				4C89BAA4E1E43C47B4426B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C89C0E91FFFC1433A853B4AA /* Project object */;
+	rootObject = 314508B81FF08369DEE7AE74 /* Project object */;
 }

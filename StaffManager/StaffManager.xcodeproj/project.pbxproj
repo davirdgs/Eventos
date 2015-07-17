@@ -62,6 +62,7 @@
 		5598ED9D1B5574AD005FF945 /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarEvent.swift; path = Calendar/CalendarEvent.swift; sourceTree = "<group>"; };
 		5598EDA31B557998005FF945 /* CalendarEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarEventCell.swift; path = Calendar/CalendarEventCell.swift; sourceTree = "<group>"; };
 		5598EDA51B557A5E005FF945 /* CalendarEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarEventCell.xib; sourceTree = "<group>"; };
+		55D8D5401B59285200A785B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		55DC015A1B4BF37D00E8E037 /* StaffManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaffManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DC01621B4BF37D00E8E037 /* StaffManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaffManager.xcdatamodel; sourceTree = "<group>"; };
@@ -481,6 +482,7 @@
 			children = (
 				55DC016C1B4BF37D00E8E037 /* Base */,
 				8E34EA4D1B583A1900716768 /* pt */,
+				55D8D5401B59285200A785B5 /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

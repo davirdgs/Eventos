@@ -29,21 +29,6 @@ class newCustomSegue: UIStoryboardSegue {
                 (result) -> Void in
                 self.sourceViewController.presentViewController(self.destinationViewController as! UIViewController, animated: false, completion: nil)
         })
-        
-        /*
-        [UIView animateWithDuration:0.4
-            animations:^{
-            dv.center = CGPointMake(sv.center.x,
-            dv.center.y);
-            sv.center = CGPointMake(0 - sv.center.x,
-            dv.center.y);
-            }
-            completion:^(BOOL finished){
-            [[self sourceViewController] presentViewController:
-            [self destinationViewController] animated:NO completion:nil];
-            }];
-        */
-        
     }
    
 }
