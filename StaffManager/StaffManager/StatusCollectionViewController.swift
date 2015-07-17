@@ -59,5 +59,54 @@ class StatusCollectionViewController: UICollectionViewController, UICollectionVi
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         return sectionInserts
     }
-
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        switch(indexPath.row) {
+        case 0:
+            playNotification("StatusImage1")
+            break
+        case 1:
+            playNotification("StatusImage2")
+            break
+        case 2:
+            playNotification("StatusImage3")
+            break
+        case 3:
+            playNotification("StatusImage4")
+            break
+        default:
+            print(indexPath.row)
+        }
+    }
+    
+    func playNotification(imageName: String) {
+        
+        var imageBackground = UIImageView(frame: CGRectMake(30, 200, 30, 30))
+        imageBackground.image = UIImage(named: imageName)
+        self.view.addSubview(imageBackground)
+        
+        /*
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            
+            }, completion: { (result) -> Void in {
+                
+                }
+            })
+*/
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
