@@ -42,10 +42,10 @@ class CalendarViewController: UIViewController {
             return CalendarEvent(title: title, day: randomDay, startHour: randomStartHour, durationInHours: randomDuration)
         }
         
-        let cellmodels = (0...20).map { _ -> CalendarEventCellModel in
+        let cellmodels = (0...10).map { _ -> CalendarEventCellModel in
             let event = randomEvent()
             return CalendarEventCellModel(event: event) { _ in
-                println("Selected event: \(event.title)")
+                println("Selected event: \(event.title)") //Dispara açao do evento
             }
         }
         
