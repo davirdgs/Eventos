@@ -16,6 +16,7 @@ enum CalendarHeaderType: String {
 
 class CalendarViewController: UIViewController {
     
+    @IBOutlet weak var insertButton: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     lazy var sapporo: Sapporo = { [unowned self] in
         return Sapporo(collectionView: self.collectionView)
@@ -35,7 +36,7 @@ class CalendarViewController: UIViewController {
             let randomID = arc4random_uniform(10000)
             let title = "Event \(randomID)"
             
-            let randomDay = Int(arc4random_uniform(7))
+            let randomDay = Int(arc4random_uniform(1))
             let randomStartHour = Int(arc4random_uniform(20))
             let randomDuration = Int(arc4random_uniform(5) + 1)
             
@@ -54,6 +55,18 @@ class CalendarViewController: UIViewController {
 
     }
 
+    @IBAction func returnToPlanning(segue: UIStoryboardSegue) {
+        
+    }
+    
+    @IBAction func toPlanningWithEvent(segue: UIStoryboardSegue) {
+        
+    }
+    
+    
+    @IBAction func insertButtonHandler(sender: AnyObject) {
+        performSegueWithIdentifier("toInsert", sender: AnyObject?())
+    }
 
 }
 

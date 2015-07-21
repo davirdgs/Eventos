@@ -20,7 +20,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
                     NSLocalizedString("Planning", comment:"string for planning"),
                     NSLocalizedString("Maps", comment:"string for maps")]
     
-    // let titles: [String] = ["Credenciamento","Status","Planejamento", "Mapas"]
+    //Nomes das imagens
     let images: [String] = ["Cadastro","Notificacao","tasks","Mapa-1"]
 
 
@@ -39,17 +39,20 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
         
     }
 
+    //Numero de seções da collectionview menu
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
         return 1
     }
 
-
+    
+    //Numero de elemento igual ao numero de titles
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
         return self.titles.count
     }
 
+    //Instancia celulas
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionMenuCell
         
@@ -59,6 +62,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
         return cell
     }
     
+    //
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         switch(indexPath.row) {

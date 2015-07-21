@@ -9,7 +9,7 @@
 import UIKit
 import Sapporo
 
-let DaysPerWeek         : CGFloat = 7
+let DaysPerWeek         : CGFloat = 1
 let HoursPerDay         : CGFloat = 24
 let HorizontalSpacing   : CGFloat = 10
 let HeightPerHour       : CGFloat = 50

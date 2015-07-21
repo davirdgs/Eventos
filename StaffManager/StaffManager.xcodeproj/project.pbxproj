@@ -18,6 +18,7 @@
 		5598ED9E1B5574AD005FF945 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED9D1B5574AD005FF945 /* CalendarEvent.swift */; };
 		5598EDA41B557998005FF945 /* CalendarEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598EDA31B557998005FF945 /* CalendarEventCell.swift */; };
 		5598EDA61B557A5E005FF945 /* CalendarEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5598EDA51B557A5E005FF945 /* CalendarEventCell.xib */; };
+		55C055C51B5E6A9400617B62 /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C055C41B5E6A9400617B62 /* InsertViewController.swift */; };
 		55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC015F1B4BF37D00E8E037 /* AppDelegate.swift */; };
 		55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01611B4BF37D00E8E037 /* StaffManager.xcdatamodeld */; };
 		55DC01651B4BF37D00E8E037 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC01641B4BF37D00E8E037 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		5598ED9D1B5574AD005FF945 /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarEvent.swift; path = Calendar/CalendarEvent.swift; sourceTree = "<group>"; };
 		5598EDA31B557998005FF945 /* CalendarEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarEventCell.swift; path = Calendar/CalendarEventCell.swift; sourceTree = "<group>"; };
 		5598EDA51B557A5E005FF945 /* CalendarEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarEventCell.xib; sourceTree = "<group>"; };
+		55C055C41B5E6A9400617B62 /* InsertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
 		55C97E971B5D6E96002877DD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		55C97E981B5D6E96002877DD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		55C97E991B5D6E96002877DD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				5598ED9B1B557478005FF945 /* CalendarLayout.swift */,
 				5598ED9D1B5574AD005FF945 /* CalendarEvent.swift */,
 				5598EDA31B557998005FF945 /* CalendarEventCell.swift */,
+				55C055C41B5E6A9400617B62 /* InsertViewController.swift */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				55DC01631B4BF37D00E8E037 /* StaffManager.xcdatamodeld in Sources */,
 				5598ED8F1B557051005FF945 /* HeaderMenuView.swift in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
+				55C055C51B5E6A9400617B62 /* InsertViewController.swift in Sources */,
 				C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
 				C4D8AA9E1B5450A400C2E248 /* CollectionMenuViewController.swift in Sources */,

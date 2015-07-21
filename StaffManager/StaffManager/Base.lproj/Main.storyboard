@@ -333,6 +333,11 @@
                                                 <segue destination="tGP-Le-1hC" kind="unwind" unwindAction="returnToMenu:" id="5pG-TN-dSC"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Insert" id="wBo-xb-85C">
+                                            <connections>
+                                                <action selector="insertButtonHandler:" destination="ErM-Jk-Okf" id="Brx-WG-sou"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -342,12 +347,83 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="nAl-Vl-Axa" id="pvb-Dl-B5v"/>
+                        <outlet property="insertButton" destination="wBo-xb-85C" id="Mji-Xu-R2Y"/>
+                        <segue destination="bYo-Wv-MBD" kind="custom" identifier="toInsert" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="qe2-Xj-UDy"/>
                     </connections>
                 </viewController>
                 <exit id="tGP-Le-1hC" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCv-W2-cRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960.5" y="701.5"/>
+            <point key="canvasLocation" x="1998.5" y="701.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LaF-7r-UTb">
+            <objects>
+                <navigationController id="bYo-Wv-MBD" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gz3-Kw-zrK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="naq-Gh-Txf" kind="relationship" relationship="rootViewController" id="fIQ-z5-Ga2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hz-ih-dJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2533.5" y="701.5"/>
+        </scene>
+        <!--Insert View Controller-->
+        <scene sceneID="1be-HZ-ST2">
+            <objects>
+                <viewController id="naq-Gh-Txf" customClass="InsertViewController" customModule="StaffManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vdd-tZ-YTm"/>
+                        <viewControllerLayoutGuide type="bottom" id="TNM-ri-tTy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J3C-8m-HUq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To do" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpm-a8-QUc">
+                                <rect key="frame" x="16" y="147" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="naq-Gh-Txf" id="XMj-Xe-ksx"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWF-IP-pvz">
+                                <rect key="frame" x="0.0" y="244" width="375" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="naq-Gh-Txf" id="7c9-4T-JWF"/>
+                                    <outlet property="delegate" destination="naq-Gh-Txf" id="DjS-Dk-PzO"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dpp-Ve-wEe">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="3DH-2D-2cX">
+                            <connections>
+                                <segue destination="K1b-ew-pA0" kind="unwind" identifier="backSegue" unwindAction="returnToPlanning:" id="UcM-ao-xMG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Insert" id="0Qh-3E-Mhd">
+                            <connections>
+                                <segue destination="K1b-ew-pA0" kind="unwind" identifier="returnEvent" unwindAction="toPlanningWithEvent:" id="KK1-GK-v9e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="durationPicker" destination="JWF-IP-pvz" id="PZr-41-ybO"/>
+                        <outlet property="eventNameTextField" destination="cpm-a8-QUc" id="TP2-iB-opE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlS-Hc-tIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="K1b-ew-pA0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3087.5" y="701.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rn8-rL-UmO">
