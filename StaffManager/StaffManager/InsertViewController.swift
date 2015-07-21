@@ -28,6 +28,10 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+    }
+    
     //Picker View
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -53,19 +57,14 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
         
         switch(component) {
         case 0:
-            break
-        case 1:
+            self.startHour = row
             break
         case 2:
+            self.endHour = row
             break
         default:
             break
         }
-        
-        if(component == 0) {
-            self.startHour = row
-        }
-        
     }
     
     //Text Field
