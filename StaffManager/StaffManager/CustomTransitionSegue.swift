@@ -8,7 +8,7 @@
 
 import UIKit
 
-class newCustomSegue: UIStoryboardSegue {
+class CustomTransitionSegue: UIStoryboardSegue {
     
     override func perform() {
         

@@ -68,7 +68,7 @@
                         <outlet property="loginButton" destination="meO-2w-Sck" id="xUP-gK-EqQ"/>
                         <outlet property="loginTextField" destination="JO3-Ag-0Rs" id="vG7-Lz-Unw"/>
                         <outlet property="passwordTextField" destination="peD-DZ-Edi" id="Yu7-Xl-lp2"/>
-                        <segue destination="Ro3-cS-jwx" kind="custom" identifier="staffMode" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="kuG-Z9-yGe"/>
+                        <segue destination="Ro3-cS-jwx" kind="custom" identifier="staffMode" customClass="CustomTransitionSegue" customModule="StaffManager" customModuleProvider="target" id="kuG-Z9-yGe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -162,10 +162,10 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="ErM-Jk-Okf" kind="custom" identifier="toPlan" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="3Tw-sw-gdX"/>
-                        <segue destination="Xeh-32-yV2" kind="custom" identifier="toMaps" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="kZ0-2K-cW9"/>
-                        <segue destination="IBF-Ie-0K9" kind="custom" identifier="toStatus" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="tSJ-ro-esf"/>
-                        <segue destination="Ka5-Sa-N9s" kind="custom" identifier="toAccreditation" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="8ys-U4-Fcb"/>
+                        <segue destination="ErM-Jk-Okf" kind="custom" identifier="toPlan" customClass="CustomTransitionSegue" customModule="StaffManager" customModuleProvider="target" id="3Tw-sw-gdX"/>
+                        <segue destination="Xeh-32-yV2" kind="custom" identifier="toMaps" customClass="CustomTransitionSegue" customModule="StaffManager" customModuleProvider="target" id="kZ0-2K-cW9"/>
+                        <segue destination="IBF-Ie-0K9" kind="custom" identifier="toStatus" customClass="CustomTransitionSegue" customModule="StaffManager" customModuleProvider="target" id="tSJ-ro-esf"/>
+                        <segue destination="Ka5-Sa-N9s" kind="custom" identifier="toAccreditation" customClass="CustomTransitionSegue" customModule="StaffManager" customModuleProvider="target" id="8ys-U4-Fcb"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSr-6x-TzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,7 +348,7 @@
                     <connections>
                         <outlet property="collectionView" destination="nAl-Vl-Axa" id="pvb-Dl-B5v"/>
                         <outlet property="insertButton" destination="wBo-xb-85C" id="Mji-Xu-R2Y"/>
-                        <segue destination="bYo-Wv-MBD" kind="custom" identifier="toInsert" customClass="newCustomSegue" customModule="StaffManager" customModuleProvider="target" id="qe2-Xj-UDy"/>
+                        <segue destination="bYo-Wv-MBD" kind="custom" identifier="toInsert" customClass="CustomTransitionSegue" customModule="StaffManager" customModuleProvider="target" id="qe2-Xj-UDy"/>
                     </connections>
                 </viewController>
                 <exit id="tGP-Le-1hC" userLabel="Exit" sceneMemberID="exit"/>
@@ -529,7 +529,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FeQ-LO-pCe" kind="custom" identifier="toParticipantes" customClass="newCustomSegue" customModule="StaffManager" id="yGK-7P-TWg"/>
+                                    <segue destination="FeQ-LO-pCe" kind="custom" identifier="toParticipantes" customClass="CustomTransitionSegue" customModule="StaffManager" id="yGK-7P-TWg"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D9R-Nh-dpx">
