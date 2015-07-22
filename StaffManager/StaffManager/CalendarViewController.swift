@@ -22,6 +22,12 @@ class CalendarViewController: UIViewController {
         return Sapporo(collectionView: self.collectionView)
     }()
     
+    var cellModels: [CalendarEventCellModel] = (0...1).map {
+        _ -> CalendarEventCellModel in
+        let event = CalendarEvent(title: "", day: 2, startHour: 0, durationInHours: 1)
+        return CalendarEventCellModel(event: event) {_ in print("")}
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sapporo.delegate = self
@@ -32,27 +38,27 @@ class CalendarViewController: UIViewController {
         let layout = CalendarLayout()
         sapporo.setLayout(layout)
         
-        let randomEvent = { () -> CalendarEvent in
-            let randomID = arc4random_uniform(10000)
-            let title = "Event \(randomID)"
-            
-            let randomDay = Int(arc4random_uniform(1))
-            let randomStartHour = Int(arc4random_uniform(20))
-            let randomDuration = Int(arc4random_uniform(5) + 1)
-            
-            return CalendarEvent(title: title, day: randomDay, startHour: randomStartHour, durationInHours: randomDuration)
-        }
+        cellModels.removeAll(keepCapacity: true)
         
-        let cellmodels = (0...10).map { _ -> CalendarEventCellModel in
-            let event = randomEvent()
-            return CalendarEventCellModel(event: event) { _ in
-                println("Selected event: \(event.title)") //Dispara açao do evento
-            }
-        }
-        
-        sapporo[0].append(cellmodels)
+        sapporo[0].append(cellModels)
         sapporo.bump()
 
+    }
+    
+    func addEvent(name: String, start: Int, duration: Int) {
+        let event = CalendarEvent(title: name, day: 0, startHour: start, durationInHours: duration)
+        
+        let cellModels = (0...1).map { _ -> CalendarEventCellModel in
+            return CalendarEventCellModel(event: event) { _ in
+                println("Evento")
+            }
+            
+        }
+        
+        sapporo[0].append(cellModels)
+        sapporo.bump()
+        print(name, start, duration)
+        
     }
 
     @IBAction func returnToPlanning(segue: UIStoryboardSegue) {
@@ -79,7 +85,7 @@ extension CalendarViewController: SapporoDelegate {
         }
         
         let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: CalendarHeaderView.reuseIdentifier, forIndexPath: indexPath) as! CalendarHeaderView
-        view.titleLabel.text = "Hour \(indexPath.item + 1)"
+        view.titleLabel.text = "\(indexPath.item + 1)h"
         return view
     }
 }
