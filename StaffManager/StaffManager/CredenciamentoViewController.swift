@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class CredenciamentoViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
+class CredenciamentoViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet var nameTextField: UITextField!
     
@@ -78,12 +79,20 @@ class CredenciamentoViewController: UIViewController, UINavigationControllerDele
         
         // Create the action to reset formulary
         var okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+            
             UIAlertAction in
+            
+            let mailComposeViewController = self.configuredMailComposeViewController()
+            if MFMailComposeViewController.canSendMail() {
+                self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            } else {
+                self.showSendMailErrorAlert()
+            }
+            
             self.nameTextField.text = ""
             self.emailTextField.text = ""
             self.cameraImgView.image = UIImage()
-            
-            NSLog("OK Pressed")
+            //NSLog("OK Pressed")
         }
         
         // Add the actions
@@ -102,4 +111,27 @@ class CredenciamentoViewController: UIViewController, UINavigationControllerDele
         return false
     }
     
+    // MailComposer functions
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients([emailTextField.text])
+        mailComposerVC.setSubject("Cadastro realizado no Evento")
+        mailComposerVC.setMessageBody("Parabens \(nameTextField.text)!, agora você está cadastrado no evento", isHTML: false)
+        
+        return mailComposerVC
+    }
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate
+    
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
 }
