@@ -15,7 +15,7 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
     
     var startHour: Int = 0
     var endHour: Int = 0
-    var eventName: String = ""
+    //var eventName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,11 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
+        if(segue.identifier == "returnEvent") {
+            let duration: Int = self.endHour - self.startHour
+            let controller = segue.destinationViewController as! CalendarViewController
+            controller.addEvent(self.eventNameTextField.text, start: self.startHour, duration: duration)
+        }
     }
     
     //Picker View
