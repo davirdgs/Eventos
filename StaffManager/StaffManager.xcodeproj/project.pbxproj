@@ -603,10 +603,6 @@
 			baseConfigurationReference = 62BE16C211108D8BF7D3DF71 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sapporo-fw",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/StaffManagerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -618,10 +614,6 @@
 			baseConfigurationReference = 314198B6A86247A6DC5A8214 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sapporo-fw",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/StaffManagerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
