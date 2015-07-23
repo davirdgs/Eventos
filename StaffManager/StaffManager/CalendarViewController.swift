@@ -80,7 +80,7 @@ extension CalendarViewController: SapporoDelegate {
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         if kind == CalendarHeaderType.Day.rawValue {
             let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: CalendarHeaderView.reuseIdentifier, forIndexPath: indexPath) as! CalendarHeaderView
-            view.titleLabel.text = "Day \(indexPath.item + 1)"
+            view.titleLabel.text = "Dia \(indexPath.item + 1)"
             return view
         }
         
