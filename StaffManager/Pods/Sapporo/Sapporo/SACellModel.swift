@@ -9,17 +9,17 @@
 import UIKit
 
 protocol SACellModelDelegate: class {
-    func bumpMe(type: ItemBumpType)
+	func bumpMe(type: ItemBumpType)
 	func getOffscreenCell(identifier: String) -> SACell
 }
 
-public class SACellModel {
-    weak var delegate               : SACellModelDelegate?
-    public let reuseIdentifier      : String
-    public internal(set) var indexPath = NSIndexPath(forRow: 0, inSection: 0)
+public class SACellModel: NSObject {
+	weak var delegate               : SACellModelDelegate?
+	public let reuseIdentifier      : String
+	public internal(set) var indexPath = NSIndexPath(forRow: 0, inSection: 0)
 	
-    public var selectionHandler     : SASelectionHandler?
-    public var deselectHandler      : SADeselectionHandler?
+	public var selectionHandler     : SASelectionHandler?
+	public var deselectHandler      : SADeselectionHandler?
 	
 	private var dynamicSizeEnabled	= false
 	private var estimatedSize		= CGSize.zeroSize
@@ -42,30 +42,32 @@ public class SACellModel {
 		}
 	}
 	
-    public init<T: SACell>(cellType: T.Type, size: CGSize, selectionHandler: SASelectionHandler?) {
-        self.reuseIdentifier = cellType.reuseIdentifier
-        self.estimatedSize = size
-        self.selectionHandler = selectionHandler
-    }
-    
-    public init<T: SACell>(cellType: T.Type, selectionHandler: SASelectionHandler?) {
-        self.reuseIdentifier = cellType.reuseIdentifier
-        self.estimatedSize = CGSize.zeroSize
-        self.selectionHandler = selectionHandler
-    }
+	public init<T: SACell>(cellType: T.Type, size: CGSize, selectionHandler: SASelectionHandler?) {
+		self.reuseIdentifier = cellType.reuseIdentifier
+		self.estimatedSize = size
+		self.selectionHandler = selectionHandler
+		super.init()
+	}
 	
-    func setup(indexPath: NSIndexPath, delegate: SACellModelDelegate) {
-        self.indexPath = indexPath
-        self.delegate = delegate
-    }
-    
-    func didSelect(cell: SACell) {
-        selectionHandler?(cell)
-    }
-    
-    func didDeselect(cell: SACell) {
-        deselectHandler?(cell)
-    }
+	public init<T: SACell>(cellType: T.Type, selectionHandler: SASelectionHandler?) {
+		self.reuseIdentifier = cellType.reuseIdentifier
+		self.estimatedSize = CGSize.zeroSize
+		self.selectionHandler = selectionHandler
+		super.init()
+	}
+	
+	func setup(indexPath: NSIndexPath, delegate: SACellModelDelegate) {
+		self.indexPath = indexPath
+		self.delegate = delegate
+	}
+	
+	func didSelect(cell: SACell) {
+		selectionHandler?(cell)
+	}
+	
+	func didDeselect(cell: SACell) {
+		deselectHandler?(cell)
+	}
 	
 	public func enableDynamicHeight(width: CGFloat) {
 		dynamicSizeEnabled = true
@@ -76,10 +78,10 @@ public class SACellModel {
 		dynamicSizeEnabled = false
 	}
 	
-    public func bump() {
+	public func bump() {
 		calculatedSize = nil
-        delegate?.bumpMe(ItemBumpType.Reload(indexPath))
-    }
+		delegate?.bumpMe(ItemBumpType.Reload(indexPath))
+	}
 }
 
 private extension SACellModel {

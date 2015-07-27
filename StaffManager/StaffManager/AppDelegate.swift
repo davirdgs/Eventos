@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import IMFCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //window?.tintColor = themeColor
         // Override point for customization after application launch.
-        
+        // inicializar o SDK com o ID e a rota do aplicativo IBM Bluemix
+        IMFClient.sharedInstance().initializeWithBackendRoute("https://staff-manager.mybluemix.net", backendGUID: "f774301e-a5e7-4d7a-9d5a-4c37617a032a")
         return true
     }
 

@@ -1,10 +1,10 @@
 PODS:
-  - Sapporo (0.0.8)
+  - Sapporo (0.1.2)
 
 DEPENDENCIES:
   - Sapporo
 
 SPEC CHECKSUMS:
-  Sapporo: e4e191c4c7a1d933339eda7eb414641a09dbf135
+  Sapporo: 65f0b7672edd64c9c51ba9cd7a25c671349ac3fe
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2
