@@ -8,7 +8,9 @@
 
 import UIKit
 import CoreData
-import IMFCore
+//import IMFCore
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,10 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        //window?.tintColor = themeColor
+        window?.tintColor = themeColor
         // Override point for customization after application launch.
         // inicializar o SDK com o ID e a rota do aplicativo IBM Bluemix
-        IMFClient.sharedInstance().initializeWithBackendRoute("https://staff-manager.mybluemix.net", backendGUID: "f774301e-a5e7-4d7a-9d5a-4c37617a032a")
+        //IMFClient.sharedInstance().initializeWithBackendRoute("https://staff-manager.mybluemix.net", backendGUID: "f774301e-a5e7-4d7a-9d5a-4c37617a032a")
+        
+        Parse.enableLocalDatastore()
+        
+        //Initialize Parse
+        Parse.setApplicationId("QG8z6C6TMRWaYTHkN5lVSV5rA8fXMYRTUSZroMFX", clientKey: "OI3Elat3998GWqseTnQajlDrT1JF5AQa75Hwn5Kf")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         return true
     }
 
