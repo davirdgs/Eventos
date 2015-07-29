@@ -34,7 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		77E85C2E8BD0CD2FC2A0D65C62C61B28 /* PBXContainerItemProxy */ = {
+		5BD6E2A6A4EEF0758B862323761457F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -249,7 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				951C00E424A407EF4BBB1ABA370B3CB7 /* PBXTargetDependency */,
+				6A8E5F911E5185DACD6FCDFE43E8E554 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -338,11 +338,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		951C00E424A407EF4BBB1ABA370B3CB7 /* PBXTargetDependency */ = {
+		6A8E5F911E5185DACD6FCDFE43E8E554 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sapporo;
 			target = 517831A41ABB97EE2A58DCAC4AE76E6C /* Sapporo */;
-			targetProxy = 77E85C2E8BD0CD2FC2A0D65C62C61B28 /* PBXContainerItemProxy */;
+			targetProxy = 5BD6E2A6A4EEF0758B862323761457F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
