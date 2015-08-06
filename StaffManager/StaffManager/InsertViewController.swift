@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import ParseModel
 
 class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -33,8 +34,13 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
             let duration: Int = self.endHour - self.startHour
             let controller = segue.destinationViewController as! CalendarViewController
             controller.addEvent(self.eventNameTextField.text, start: self.startHour, duration: duration)
+            
+            // Persistence
+            
         }
     }
+    
+    
     
     //Picker View
     
@@ -70,6 +76,8 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
             break
         }
     }
+    
+    
     
     //Text Field
     

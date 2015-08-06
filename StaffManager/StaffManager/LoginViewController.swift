@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -19,6 +20,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //let testObject = PFObject(className: "TestObject")
+        //testObject["foo"] = "bar"
+        //testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            //println("Object has been saved.")
+        //}
     }
 
     override func didReceiveMemoryWarning() {

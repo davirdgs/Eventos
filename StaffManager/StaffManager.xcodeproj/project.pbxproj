@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B7267AD0B131786E5AECF68 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AFB699A6FAFAA709355B0F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		12BD93697E01129983AFBD73 /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
+		5516D0EC1B6A757000841999 /* ParceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5516D0EB1B6A757000841999 /* ParceModel.swift */; };
 		5598ED891B556E10005FF945 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED881B556E10005FF945 /* CalendarViewController.swift */; };
 		5598ED8D1B557048005FF945 /* FooterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED8C1B557048005FF945 /* FooterMenuView.swift */; };
 		5598ED8F1B557051005FF945 /* HeaderMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598ED8E1B557051005FF945 /* HeaderMenuView.swift */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		314198B6A86247A6DC5A8214 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5516D0EB1B6A757000841999 /* ParceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParceModel.swift; sourceTree = "<group>"; };
 		5598ED881B556E10005FF945 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5598ED8C1B557048005FF945 /* FooterMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterMenuView.swift; sourceTree = "<group>"; };
 		5598ED8E1B557051005FF945 /* HeaderMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderMenuView.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				C4D8AA571B4C5D6400C2E248 /* DAO */,
 				C4D8AA4F1B4C4AAE00C2E248 /* VO */,
 				C4D8AA501B4C4ADF00C2E248 /* DataBaseManager.swift */,
+				5516D0EB1B6A757000841999 /* ParceModel.swift */,
 			);
 			name = Persistence;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 			files = (
 				5598ED9C1B557478005FF945 /* CalendarLayout.swift in Sources */,
 				55EBBE981B56832600E79C92 /* StatusCollectionViewController.swift in Sources */,
+				5516D0EC1B6A757000841999 /* ParceModel.swift in Sources */,
 				5598ED8D1B557048005FF945 /* FooterMenuView.swift in Sources */,
 				5598ED971B55739E005FF945 /* CalendarHeaderView.swift in Sources */,
 				C4C7A1A91B56BFFB00B6C677 /* CollectionMenuCell.swift in Sources */,
