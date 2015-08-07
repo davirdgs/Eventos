@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import ParseModel
+import Parse
 
 class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -16,11 +16,15 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
     
     var startHour: Int = 0
     var endHour: Int = 0
-    //var eventName: String = ""
+    var eventName: String = ""
+    
+    var startArray: NSMutableArray = NSMutableArray()
+    var durationArray: NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -40,6 +44,7 @@ class InsertViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
         }
     }
     
+    //Parse
     
     
     //Picker View

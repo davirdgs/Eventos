@@ -10,14 +10,22 @@ import UIKit
 import Parse
 import Foundation
 
-class ParceModel {
+public class ParceModel {
+    
+    // Atualizar para diferentes listas
+    static var listId: String = "aNjeuvtZJy"
    
+    static func initEventList() {
+        var newList = PFObject(className: "EventList")
+        newList.saveInBackground()
+    }
+    
     func saveEventInClound(eventName: String, withStart start: Int, andDuration duration: Int) {
         
-        var newEvent = PFObject(className:"Event")
-        newEvent["name"] = eventName
-        newEvent["start"] = start
-        newEvent["duration"] = duration
+        var newEvent = EventModel()
+        newEvent.eventName = eventName
+        newEvent.eventStart = start
+        newEvent.eventDuration = duration
         newEvent.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {

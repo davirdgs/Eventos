@@ -27,6 +27,7 @@ class CollectionMenuViewController: UICollectionViewController, UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ParceModel.initEventList()
     }
 
     override func didReceiveMemoryWarning() {
