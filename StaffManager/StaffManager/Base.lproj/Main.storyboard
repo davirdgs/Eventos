@@ -43,10 +43,7 @@
                                     <constraint firstAttribute="height" constant="47" id="Xcm-tS-CEF"/>
                                     <constraint firstAttribute="width" constant="72" id="d2A-U4-Sck"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonHandler:" destination="vXZ-lx-hvc" eventType="touchDown" id="Y8l-C5-NmC"/>
                                 </connections>

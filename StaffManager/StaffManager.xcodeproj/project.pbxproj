@@ -53,6 +53,7 @@
 		55F2C8BB1B66C62A00D6406E /* IMFData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F2C8BA1B66C62A00D6406E /* IMFData.framework */; };
 		8E34EA5A1B584D3200716768 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E34EA5C1B584D3200716768 /* InfoPlist.strings */; };
 		8E34EA5F1B584D3300716768 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E34EA611B584D3300716768 /* Localizable.strings */; };
+		C41845891B750DDC00245709 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41845881B750DDC00245709 /* SignUpViewController.swift */; };
 		C4C7A1A91B56BFFB00B6C677 /* CollectionMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C7A1A81B56BFFB00B6C677 /* CollectionMenuCell.swift */; };
 		C4D8AA4C1B4C490500C2E248 /* CredenciamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */; };
 		C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */; };
@@ -133,6 +134,7 @@
 		8E34EA571B58443800716768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		8E34EA5B1B584D3200716768 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E34EA601B584D3300716768 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C41845881B750DDC00245709 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C4C7A1A81B56BFFB00B6C677 /* CollectionMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionMenuCell.swift; sourceTree = "<group>"; };
 		C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredenciamentoViewController.swift; sourceTree = "<group>"; };
 		C4D8AA4D1B4C4AA000C2E248 /* Participante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Participante.swift; path = VO/Participante.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				55EBBE991B56835800E79C92 /* MapsViewController.swift */,
 				C4D8AA9D1B5450A400C2E248 /* CollectionMenuViewController.swift */,
 				55DC01841B4C044400E8E037 /* LoginViewController.swift */,
+				C41845881B750DDC00245709 /* SignUpViewController.swift */,
 				C4D8AA4B1B4C490500C2E248 /* CredenciamentoViewController.swift */,
 				C4D8AA891B541D4700C2E248 /* ParticipantListViewController.swift */,
 				5598ED881B556E10005FF945 /* CalendarViewController.swift */,
@@ -535,6 +538,7 @@
 				5598ED8F1B557051005FF945 /* HeaderMenuView.swift in Sources */,
 				55DC01851B4C044400E8E037 /* LoginViewController.swift in Sources */,
 				55C055C51B5E6A9400617B62 /* InsertViewController.swift in Sources */,
+				C41845891B750DDC00245709 /* SignUpViewController.swift in Sources */,
 				C4D8AA4E1B4C4AA000C2E248 /* Participante.swift in Sources */,
 				55DC01601B4BF37D00E8E037 /* AppDelegate.swift in Sources */,
 				C4D8AA9E1B5450A400C2E248 /* CollectionMenuViewController.swift in Sources */,
